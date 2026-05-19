@@ -27,30 +27,137 @@ body{
 
 
 
-/* HERO IMAGE ANIMATION */
+/* ================= HERO IMAGE ANIMATION ================= */
+
 @keyframes zoomHero{
 
-  from{
-    transform:scale(1.02);
-  }
+from{
+transform:scale(1.02);
+}
 
-  to{
-    transform:scale(1.08);
-  }
+to{
+transform:scale(1.08);
+}
 
 }
+
+
+
+/* HERO IMAGE */
 
 .hero-image{
-  animation:zoomHero 8s linear infinite alternate;
+
+animation:
+zoomHero 8s linear infinite alternate;
+
+/* makes corners rounded */
+
+border-radius:38px;
+
+/* prevents top edge looking flat */
+
+overflow:hidden;
+
 }
 
 
 
-/* GLASS EFFECT */
-.glass-box{
-  background:rgba(255,255,255,0.10);
-  backdrop-filter:blur(18px);
-  border:1px solid rgba(255,255,255,0.15);
+
+/* HERO CONTAINER */
+
+.hero-wrapper{
+
+border-radius:38px;
+
+overflow:hidden;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.18);
+
+}
+
+
+
+
+
+/* ================= HERO BUTTON ================= */
+
+.explore-btn{
+
+display:inline-flex;
+
+align-items:center;
+justify-content:center;
+
+width:220px;
+height:58px;
+
+background:#fff;
+
+color:#001845;
+
+font-size:18px;
+font-weight:600;
+
+text-decoration:none;
+
+border-radius:18px;
+
+box-shadow:
+0 12px 28px rgba(0,0,0,.18);
+
+transition:.3s;
+
+position:relative;
+
+}
+
+
+
+.explore-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.22);
+
+background:#f8fafc;
+
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hero-image{
+
+border-radius:28px;
+
+}
+
+
+.hero-wrapper{
+
+border-radius:28px;
+
+}
+
+
+
+.explore-btn{
+
+width:200px;
+
+height:54px;
+
+font-size:16px;
+
+}
+
 }
 
 </style>
@@ -62,208 +169,208 @@ body{
 
 
 
-<!-- ================= HEADER ================= -->
-<header class="w-full bg-white shadow-sm">
-
-  <div class="max-w-7xl mx-auto px-8 h-[95px] flex items-center justify-between">
-
-
-
-
     <!-- ================= HEADER ================= -->
 
-<header class="w-full bg-white shadow-sm sticky top-0 z-50">
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
 
-<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-7xl mx-auto px-6">
 
-<div class="h-[95px] flex items-center justify-between">
+<div class="h-[88px] flex items-center justify-between">
 
 
+<!-- LOGO -->
 
-<!-- LOGO (CLICKABLE HOME) -->
-
-<a href="index.html"
-class="flex items-center">
+<a href="index.html">
 
 <img
 src="images/logo-website.webp"
-class="h-[95px] w-auto object-contain"
-alt="Wander & Wonder Travels">
-
-</a>
-
-
-
-
-
-<!-- MENU -->
-
-<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg font-medium">
-
-
-
-<!-- Home -->
-
-<a href="index.html"
 
 class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
-Home
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
+h-[85px]
+w-auto
+object-contain">
 
 </a>
 
 
 
+<!-- DESKTOP MENU -->
 
-<!-- TOURS -->
+<nav class="hidden md:flex gap-10 text-[#001845] font-medium">
 
-<a href="#tours"
+<a href="index.html">Home</a>
 
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
+<a href="#tours">Tours</a>
 
-Tours
+<a href="#destinations">Destinations</a>
 
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
+<a href="#story">Our Story</a>
 
-</a>
-
-
-
-
-<!-- DESTINATIONS -->
-
-<a href="#destinations"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
-Destinations
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
-</a>
-
-
-
-
-<!-- OUR STORY -->
-
-<a href="#story"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
-Our Story
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
-</a>
-
-
-
-
-<!-- CONTACT -->
-
-<a href="#enquiry-section"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
-Contact Us
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
-</a>
+<a href="#enquiry-section">Contact</a>
 
 </nav>
 
-</div>
-
-</header>
 
 
 
-
-
-<!-- MOBILE MENU -->
+<!-- HAMBURGER -->
 
 <button
-class="md:hidden text-3xl text-[#001845]">
+id="menu-btn"
+
+class="
+md:hidden
+w-12
+h-12
+rounded-full
+bg-[#001845]
+text-white
+text-xl
+flex
+items-center
+justify-center
+shadow-xl">
 
 <i class="fa-solid fa-bars"></i>
 
 </button>
 
 
+</div>
 
 </div>
+
+
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<nav
+
+id="mobile-menu"
+
+class="
+fixed
+top-0
+left-[-100%]
+
+w-[82%]
+h-screen
+
+bg-white
+
+z-[999]
+
+transition-all
+duration-500
+
+shadow-2xl
+p-8">
+
+
+
+
+<!-- CLOSE BUTTON -->
+
+<div class="flex justify-end">
+
+<button
+id="close-menu"
+
+class="
+text-4xl
+text-[#001845]">
+
+×
+
+</button>
+
 </div>
+
+
+
+
+
+<!-- MOBILE LINKS -->
+
+<div class="flex flex-col gap-8 mt-16 text-2xl text-[#001845]">
+
+<a href="index.html">Home</a>
+
+<a href="#tours">Tours</a>
+
+<a href="#destinations">Destinations</a>
+
+<a href="#story">Our Story</a>
+
+<a href="#enquiry-section">Contact</a>
+
+<a
+href="https://wa.me/918910042688"
+
+class="
+bg-[#25D366]
+text-white
+rounded-xl
+py-4
+text-center">
+
+WhatsApp Us
+
+</a>
+
+</div>
+
+</nav>
 
 </header>
+
+
+
+
+<!-- ================= HEADER SCRIPT ================= -->
+
+<script>
+
+const menu =
+document.getElementById("mobile-menu");
+
+const openBtn =
+document.getElementById("menu-btn");
+
+const closeBtn =
+document.getElementById("close-menu");
+
+
+
+openBtn.addEventListener(
+
+"click",
+
+()=>{
+
+menu.style.left="0";
+
+}
+
+);
+
+
+
+closeBtn.addEventListener(
+
+"click",
+
+()=>{
+
+menu.style.left="-100%";
+
+}
+
+);
+
+</script>
+<!-- ================= JAVASCRIPT END ================= -->
 
 
 
@@ -273,263 +380,170 @@ class="md:hidden text-3xl text-[#001845]">
 
 
 <!-- ================= HERO SECTION ================= -->
-<section class="py-6 bg-white">
 
-  <div class="max-w-7xl mx-auto px-6">
+<section class="bg-white pt-[115px] pb-8">
 
+<div class="max-w-7xl mx-auto px-4 md:px-6">
 
+<!-- HERO BOX -->
 
+<div class="
+hero-wrapper
 
-    <!-- HERO BOX -->
-<div class="relative h-[78vh] rounded-[40px] overflow-hidden">
+relative
 
-
-
-
-      <!-- HERO IMAGE -->
-      <img
-        src="images/kashmir-hero.webp"
-        class="absolute inset-0 w-full h-full object-cover hero-image"
-        alt=""
-      >
+h-[72vh]
+md:h-[78vh]
+">
 
 
 
 
+<!-- HERO IMAGE -->
 
-      <!-- OVERLAY -->
-      <div class="absolute inset-0 bg-black/40"></div>
+<img
+src="images/kashmir-hero.webp"
 
+class="
+absolute
+inset-0
 
+w-full
+h-full
 
+object-cover
 
+hero-image
+"
 
-
-      <!-- CONTENT -->
-      <div class="relative z-20 h-full flex items-center justify-center text-center px-6">
-
-        <div class="max-w-5xl">
-
-
-          <!-- TITLE -->
-          <h1
-  class="text-white leading-none mb-8"
-  style="
-    font-size: clamp(40px, 6vw, 55px);
-    font-weight: 800;
-    letter-spacing: -2px;
-  "
+alt=""
 >
-  YOUR JOURNEY, OUR PASSION
+
+
+
+
+<!-- OVERLAY -->
+
+<div class="
+absolute
+inset-0
+bg-black/35
+"></div>
+
+
+
+
+
+<!-- CONTENT -->
+
+<div class="
+relative
+z-20
+
+h-full
+
+flex
+items-center
+justify-center
+
+text-center
+
+px-6
+">
+
+<div class="max-w-5xl">
+
+
+
+<!-- TITLE -->
+
+<h1
+
+class="
+text-white
+leading-tight
+mb-6
+"
+
+style="
+font-size:clamp(34px,9vw,60px);
+font-weight:800;
+line-height:1.05;
+"
+
+>
+
+YOUR JOURNEY,<br>
+OUR PASSION
+
 </h1>
 
 
 
 
 
-          <!-- DESCRIPTION -->
-          <p class="text-white/80 text-xl md:text-2xl leading-10 max-w-3xl mx-auto mb-12">
+<!-- SUBTITLE -->
 
-            Let's Plan Your Next Trip
+<p class="
+text-white/85
 
-          </p>
+text-lg
+md:text-2xl
 
+mb-10
+">
 
+Let's Plan Your Next Trip
 
-
-
-
-          <!-- ================= QUERY BOX ================= -->
-
-<div class="glass-box rounded-[35px] p-7 max-w-5xl mx-auto">
-
-<form
-onsubmit="sendWhatsapp(); return false;"
-class="grid md:grid-cols-4 gap-5">
-
-
-<!-- DESTINATION -->
-
-<input
-id="destination"
-type="text"
-placeholder="Destination"
-
-class="h-[58px]
-px-5
-rounded-2xl
-bg-white/10
-border border-white/10
-text-white
-placeholder-white/80
-outline-none"
-
-required
->
+</p>
 
 
 
-<!-- DATE -->
 
-<input
-id="date"
-type="text"
-
-placeholder="Date of Journey"
-
-onfocus="this.type='date'"
-
-class="h-[58px]
-px-5
-rounded-2xl
-bg-white/10
-border border-white/10
-text-white
-placeholder-white/80
-outline-none"
-
-required
->
-
-
-
-<!-- TRAVELLERS -->
-
-<input
-id="travellers"
-
-type="number"
-
-placeholder="Travellers"
-
-class="h-[58px]
-px-5
-rounded-2xl
-bg-white/10
-border border-white/10
-text-white
-placeholder-white/80
-outline-none"
-
-required
->
 
 
 
 <!-- BUTTON -->
 
-<button
-type="submit"
+<div class="flex justify-center">
 
-class="h-[58px]
-rounded-2xl
-bg-[#0D8BFF]
-hover:bg-[#0077e6]
+<a
+
+href="#tours"
+
+class="
+bg-white
+
+w-[220px]
+md:w-[270px]
+
+h-[58px]
+
+rounded-[18px]
+
+flex
+items-center
+justify-center
+
+font-semibold
+
+text-[#001845]
+
+shadow-xl
+
+hover:-translate-y-1
+hover:shadow-2xl
+
 transition
-text-white
-text-lg
-font-semibold">
+">
 
-Plan Trip
+Explore Packages →
 
-</button>
-
-
-</form>
+</a>
 
 </div>
 
 
-
-<!-- ================= WHATSAPP SCRIPT ================= -->
-
-<script>
-
-function sendWhatsapp(){
-
-let destination =
-document.getElementById("destination").value;
-
-let date =
-document.getElementById("date").value;
-
-let travellers =
-document.getElementById("travellers").value;
-
-
-
-let message =
-
-`Hello Wander & Wonder Travels,
-
-I want to plan a trip.
-
-Destination: ${destination}
-
-Date of Journey: ${date}
-
-Number of Travellers: ${travellers}
-
-Please share package details.`;
-
-
-
-let whatsappURL =
-
-`https://wa.me/918910042688?text=${encodeURIComponent(message)}`;
-
-
-
-window.open(
-whatsappURL,
-'_blank'
-);
-
-}
-
-</script>
-
-
-
-
-
-
-          <!-- BUTTONS -->
-          <div class="flex flex-wrap justify-center gap-5 mt-10">
-
-            <a
-              href="#tours"
-              class="bg-white text-black
-              px-8 py-4
-              rounded-full
-              text-lg
-              font-semibold
-              hover:bg-gray-200
-              transition"
-            >
-              View Packages
-            </a>
-
-
-
-
-
-            <a
-              href="https://wa.me/918910042688"
-              target="_blank"
-              class="bg-[#25D366]
-              hover:bg-[#1ebe5d]
-              text-white
-              px-8 py-4
-              rounded-full
-              text-lg
-              font-semibold
-              transition"
-            >
-              WhatsApp Us
-            </a>
-
-          </div>
 
 
 
@@ -604,15 +618,15 @@ whatsappURL,
               <i class="fab fa-whatsapp"></i>
             </a>
 
-          </div>
+                   </div>
+
+               </div>
+
+            </div>
 
         </div>
 
-      </div>
-
-    </div>
-
-  </div>
+     </div>
 
 </section>
 
@@ -675,356 +689,133 @@ whatsappURL,
 
 <section class="state-section">
 
-    <div class="heading">
-
-        <h2>
-            Explore Tours By State
-        </h2>
-
-        <p>
-            Choose destinations across India
-        </p>
-
-    </div>
+<div class="heading">
+<h2>Explore Tours By State</h2>
+<p>Choose destinations across India</p>
+</div>
 
 
 
-    <div class="state-grid">
+<div class="state-grid">
 
 
-        <!-- Jammu Kashmir -->
+<!-- KASHMIR -->
+<div class="state-item">
 
-<div class="relative group">
+<div class="state-card">
+<img src="images/kashmir-icon.webp">
+</div>
 
+<div class="dropdown">
 
-    <!-- CARD -->
-
-    <a href="#"
-    class="state-card">
-
-        <img
-        src="images/kashmir-icon.webp">
-
-    </a>
-
-
-
-    <!-- DROPDOWN -->
-
-    <div class="
-    absolute
-    left-1/2
-    -translate-x-1/2
-    top-full
-
-    pt-3
-
-    opacity-0
-    invisible
-
-    group-hover:opacity-100
-    group-hover:visible
-
-    transition-all
-    duration-300
-
-    z-50">
-
-
-
-
-        <div class="bg-white rounded-2xl shadow-2xl p-5 min-w-[230px]">
-
-
-            <a href="tours/kashmir-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
+<a href="tours/kashmir-tour.html">
 Kashmir (5N/6D)
-
 </a>
-
-            </a>
-
-
-        </div>
-
-
-    </div>
 
 </div>
 
-        <!-- HIMACHAL -->
-
-<div class="relative group">
-
-
-    <!-- CARD -->
-
-    <a href="#"
-    class="state-card">
-
-        <img
-        src="images/himachal-icon.webp">
-
-    </a>
+</div>
 
 
 
-    <!-- DROPDOWN -->
+<!-- HIMACHAL -->
+<div class="state-item">
 
-    <div class="
-    absolute
-    left-1/2
-    -translate-x-1/2
-    top-full
+<div class="state-card">
+<img src="images/himachal-icon.webp">
+</div>
 
-    pt-3
+<div class="dropdown">
 
-    opacity-0
-    invisible
-
-    group-hover:opacity-100
-    group-hover:visible
-
-    transition-all
-    duration-300
-
-    z-50">
-
-
-
-
-        <div class="bg-white rounded-2xl shadow-2xl p-5 min-w-[230px]">
-
-
-            <a href="tours/shimla-manali-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
+<a href="tours/shimla-manali-tour.html">
 Shimla Manali (5N/6D)
-
 </a>
 
-
-<a href="tours/spiti-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
-Kinnaur Spiti Valley (8N/9D)
-
+<a href="tours/spiti-tour.html">
+Kinnaur Spiti (8N/9D)
 </a>
 
-
-<a href="tours/dharamshala-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
+<a href="tours/dharamshala-tour.html">
 Dharamshala Dalhousie (6N/7D)
-
 </a>
-            </a>
-
-
-        </div>
-
-
-    </div>
-
-</div>
-        <!-- Meghalaya -->
-
-<div class="relative group">
-
-
-    <!-- CARD -->
-
-    <a href="#"
-    class="state-card">
-
-        <img
-        src="images/meghalaya-icon.webp">
-
-    </a>
-
-
-
-    <!-- DROPDOWN -->
-
-    <div class="
-    absolute
-    left-1/2
-    -translate-x-1/2
-    top-full
-
-    pt-3
-
-    opacity-0
-    invisible
-
-    group-hover:opacity-100
-    group-hover:visible
-
-    transition-all
-    duration-300
-
-    z-50">
-
-
-
-
-        <div class="bg-white rounded-2xl shadow-2xl p-5 min-w-[230px]">
-
-
-            <a href="tours/meghalaya-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
-Shillong Cherrapunji (5N/6D)
-
-</a>
-
-            </a>
-
-
-        </div>
-
-
-    </div>
 
 </div>
 
-        <!-- West Bengal -->
-
-<div class="relative group">
-
-
-    <!-- CARD -->
-
-    <a href="#"
-    class="state-card">
-
-        <img
-        src="images/bengal-icon.webp">
-
-    </a>
+</div>
 
 
 
-    <!-- DROPDOWN -->
+<!-- MEGHALAYA -->
+<div class="state-item">
 
-    <div class="
-    absolute
-    left-1/2
-    -translate-x-1/2
-    top-full
+<div class="state-card">
+<img src="images/meghalaya-icon.webp">
+</div>
 
-    pt-3
+<div class="dropdown">
 
-    opacity-0
-    invisible
+<a href="tours/meghalaya-tour.html">
+Shillong Cherrapunji
+</a>
 
-    group-hover:opacity-100
-    group-hover:visible
+</div>
 
-    transition-all
-    duration-300
-
-    z-50">
+</div>
 
 
 
+<!-- WEST BENGAL -->
+<div class="state-item">
 
-        <div class="bg-white rounded-2xl shadow-2xl p-5 min-w-[230px]">
+<div class="state-card">
+<img src="images/bengal-icon.webp">
+</div>
 
+<div class="dropdown">
 
-            <a href="tours/darjeeling-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
+<a href="tours/darjeeling-tour.html">
 Darjeeling (3N/4D)
-
 </a>
 
-<a href="tours/sandhakphu-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
+<a href="tours/sandhakphu-tour.html">
 Sandhakphu (3N/4D)
-
 </a>
-
-            </a>
-
-
-        </div>
-
-
-    </div>
 
 </div>
-        <a href="#" class="state-card">
-            <img src="images/sikkim-icon.webp">
-        </a>
-
-        <!-- West Bengal -->
-
-<div class="relative group">
-
-
-    <!-- CARD -->
-
-    <a href="#"
-    class="state-card">
-
-        <img
-        src="images/arunachal-icon.webp">
-
-    </a>
-
-
-
-    <!-- DROPDOWN -->
-
-    <div class="
-    absolute
-    left-1/2
-    -translate-x-1/2
-    top-full
-
-    pt-3
-
-    opacity-0
-    invisible
-
-    group-hover:opacity-100
-    group-hover:visible
-
-    transition-all
-    duration-300
-
-    z-50">
-
-
-
-
-        <div class="bg-white rounded-2xl shadow-2xl p-5 min-w-[230px]">
-
-
-            <a href="tours/arunachal-tour.html"
-class="block py-3 px-4 rounded-xl hover:bg-[#0D8BFF] hover:text-white transition">
-
-Kaziranga Arunachal (7N/8D)
-
-</a>
-
-
-            </a>
-
-
-        </div>
-
-
-    </div>
 
 </div>
 
 
-    </div>
 
+<!-- SIKKIM -->
+
+<div class="state-card">
+<img src="images/sikkim-icon.webp">
+</div>
+
+
+
+<!-- ARUNACHAL -->
+
+<div class="state-item">
+
+<div class="state-card">
+<img src="images/arunachal-icon.webp">
+</div>
+
+<div class="dropdown">
+
+<a href="tours/arunachal-tour.html">
+Kaziranga Arunachal
+</a>
+
+</div>
+
+</div>
+
+
+
+</div>
 </section>
 
 
@@ -1034,12 +825,9 @@ Kaziranga Arunachal (7N/8D)
 /* SECTION */
 
 .state-section{
-
 padding:90px 6%;
 background:#f8fafc;
-
 font-family:'Josefin Sans',sans-serif;
-
 }
 
 
@@ -1047,27 +835,18 @@ font-family:'Josefin Sans',sans-serif;
 /* HEADING */
 
 .heading{
-
 text-align:center;
 margin-bottom:60px;
-
 }
-
 
 .heading h2{
-
 font-size:56px;
 font-weight:700;
-margin-bottom:10px;
-
 }
 
-
 .heading p{
-
 font-size:18px;
 color:#6b7280;
-
 }
 
 
@@ -1075,15 +854,9 @@ color:#6b7280;
 /* GRID */
 
 .state-grid{
-
 display:grid;
-
-/* SIX IN ONE ROW */
-
 grid-template-columns:repeat(6,1fr);
-
 gap:22px;
-
 }
 
 
@@ -1098,54 +871,95 @@ height:180px;
 
 border-radius:24px;
 
-padding:12px;
-
 display:flex;
 
-align-items:center;
-
 justify-content:center;
+align-items:center;
 
 box-shadow:0 10px 25px rgba(0,0,0,.05);
 
+cursor:pointer;
+
 transition:.3s;
-
 }
-
-
-
-/* ICON */
-
-.state-card img{
-
-width:100%;
-height:130px;
-
-object-fit:contain;
-
-}
-
-
-
-/* HOVER */
 
 .state-card:hover{
-
 transform:translateY(-6px);
+}
 
-box-shadow:0 18px 35px rgba(0,0,0,.10);
+.state-card img{
+width:100%;
+height:130px;
+object-fit:contain;
+}
+
+
+
+/* ITEM */
+
+.state-item{
+position:relative;
+}
+
+
+
+/* DROPDOWN */
+
+.dropdown{
+
+position:absolute;
+
+top:105%;
+left:50%;
+
+transform:translateX(-50%);
+
+background:white;
+
+padding:15px;
+
+border-radius:18px;
+
+min-width:230px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.1);
+
+display:none;
+
+z-index:999;
+}
+
+
+
+.dropdown a{
+
+display:block;
+
+padding:12px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+color:#111;
+}
+
+.dropdown a:hover{
+
+background:#0D8BFF;
+color:white;
 
 }
 
 
 
-/* TABLET */
+/* DESKTOP HOVER */
 
-@media(max-width:1000px){
+@media(min-width:769px){
 
-.state-grid{
+.state-item:hover .dropdown{
 
-grid-template-columns:repeat(3,1fr);
+display:block;
 
 }
 
@@ -1162,27 +976,75 @@ font-size:38px;
 }
 
 .state-grid{
-
 grid-template-columns:repeat(2,1fr);
-
 }
 
 .state-card{
-
 height:140px;
-
 }
 
 .state-card img{
-
 height:95px;
+}
 
+/* dropdown below card */
+
+.dropdown{
+
+position:static;
+
+transform:none;
+
+margin-top:10px;
+
+box-shadow:none;
+
+display:none;
+
+padding:0;
+
+background:none;
+
+min-width:auto;
+}
+
+.dropdown a{
+
+background:white;
+
+margin-top:8px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.dropdown.show{
+display:block;
 }
 
 }
 
 </style>
 
+
+
+<script>
+
+/* MOBILE TAP OPEN/CLOSE */
+
+document.querySelectorAll(".state-item").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+let menu =
+item.querySelector(".dropdown");
+
+menu.classList.toggle("show");
+
+});
+
+});
+
+</script>
 
 
 <!-- ================= WONDER PACKAGES ================= -->
@@ -2219,22 +2081,47 @@ font-size:16px;
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 
+
+
+
 <!-- ================= STORY ================= -->
 
-<section id="story" class="story-section">
+<section
+id="story"
 
-<div class="max-w-7xl mx-auto px-6">
+class="
+py-14
+md:py-28
+
+bg-white"
+
+style="font-family:'Josefin Sans',sans-serif;">
+
+<div class="max-w-7xl mx-auto px-5 md:px-6">
 
 
 <!-- TITLE -->
 
-<div class="text-center mb-16">
+<div class="text-center mb-10 md:mb-16">
 
-<h2 class="story-title">
+<h2 class="
+text-4xl
+md:text-[56px]
+
+font-bold
+
+mb-3">
+
 Our Story
+
 </h2>
 
-<p class="story-subtitle">
+
+<p class="
+text-gray-500
+
+text-sm
+md:text-lg">
 
 Built from years of travelling, storytelling and real experiences across India
 
@@ -2246,34 +2133,105 @@ Built from years of travelling, storytelling and real experiences across India
 
 
 
-<div class="story-grid">
+<div class="
+grid
+
+lg:grid-cols-[1.2fr_1fr]
+
+gap-8
+md:gap-16
+
+items-center">
 
 
-<!-- ================= CONTENT LEFT ================= -->
+<!-- IMAGE -->
 
-<div class="story-content">
+<div>
+
+<img
+src="images/story.webp"
+
+alt="Our Story"
+
+class="
+w-full
+
+h-[240px]
+md:h-[560px]
+
+object-cover
+
+rounded-[24px]
+md:rounded-[35px]
+
+shadow-2xl">
+
+</div>
 
 
-<h3>
+<!-- CONTENT -->
+
+<div>
+
+
+<h3 class="
+text-3xl
+md:text-[42px]
+
+font-bold
+
+mb-5">
+
 Travel Beyond Destinations
+
 </h3>
 
 
-<p>
+
+<p class="
+text-[17px]
+md:text-[21px]
+
+leading-8
+md:leading-10
+
+text-gray-600
+
+mb-5">
 
 At Wander & Wonder Travels, travel is more than visiting destinations — it is about collecting stories, discovering cultures and experiencing the true spirit of a place.
 
 </p>
 
 
-<p>
+
+<p class="
+text-[17px]
+md:text-[21px]
+
+leading-8
+md:leading-10
+
+text-gray-600
+
+mb-5">
 
 For the past <strong>4 years</strong>, we have explored India through our travel vlog channel <strong>Your Next Trip</strong>, sharing hotels, hidden places, local experiences and budget travel tips.
 
 </p>
 
 
-<p>
+
+<p class="
+text-[17px]
+md:text-[21px]
+
+leading-8
+md:leading-10
+
+text-gray-600
+
+mb-6">
 
 Using this experience, we created Wander & Wonder Travels to help people experience unforgettable journeys without unnecessary stress on their wallets.
 
@@ -2281,7 +2239,15 @@ Using this experience, we created Wander & Wonder Travels to help people experie
 
 
 
-<ul>
+
+
+<ul class="
+space-y-3
+
+text-[16px]
+md:text-[20px]
+
+text-gray-700">
 
 <li>✔ Budget friendly tours</li>
 
@@ -2298,28 +2264,73 @@ Using this experience, we created Wander & Wonder Travels to help people experie
 
 
 
-<div class="story-tags">
 
-<span>Kashmir</span>
 
-<span>Himachal</span>
+<!-- TAGS -->
 
-<span>Meghalaya</span>
+<div class="
+flex
 
-<span>Sikkim</span>
+flex-wrap
 
-<span>West Bengal</span>
+gap-3
+
+mt-7">
+
+<span class="px-4 py-2 rounded-full bg-gray-100 font-semibold text-sm">
+Kashmir
+</span>
+
+<span class="px-4 py-2 rounded-full bg-gray-100 font-semibold text-sm">
+Himachal
+</span>
+
+<span class="px-4 py-2 rounded-full bg-gray-100 font-semibold text-sm">
+Meghalaya
+</span>
+
+<span class="px-4 py-2 rounded-full bg-gray-100 font-semibold text-sm">
+Sikkim
+</span>
+
+<span class="px-4 py-2 rounded-full bg-gray-100 font-semibold text-sm">
+West Bengal
+</span>
 
 </div>
 
 
 
 
-<!-- CTA -->
+
+
+<!-- BUTTON -->
 
 <a
 href="#tours"
-class="story-btn">
+
+class="
+inline-flex
+
+mt-8
+
+px-7
+py-4
+
+bg-[#001845]
+
+text-white
+
+rounded-2xl
+
+text-sm
+md:text-lg
+
+font-semibold
+
+hover:bg-[#0D8BFF]
+
+transition">
 
 Explore Wonder Tours →
 
@@ -2327,23 +2338,6 @@ Explore Wonder Tours →
 
 
 </div>
-
-
-
-
-
-
-<!-- ================= IMAGE RIGHT ================= -->
-
-<div class="story-image">
-
-<img
-src="images/story.webp"
-alt="Our Story">
-
-</div>
-
-
 
 </div>
 
@@ -2578,11 +2572,27 @@ height:320px;
 
 <section
 id="enquiry-section"
-class="py-24 bg-[#001845] text-white">
 
-<div class="max-w-7xl mx-auto px-6">
+class="
+py-14
+md:py-24
 
-<div class="grid lg:grid-cols-2 gap-12 items-center">
+bg-[#001845]
+
+text-white">
+
+<div class="max-w-7xl mx-auto px-5 md:px-6">
+
+<div class="
+grid
+
+lg:grid-cols-2
+
+gap-8
+md:gap-12
+
+items-center">
+
 
 
 <!-- LEFT IMAGE -->
@@ -2594,12 +2604,20 @@ src="images/kashmir-hero.webp"
 
 class="
 w-full
-h-[620px]
+
+h-[240px]
+md:h-[620px]
+
 object-cover
-rounded-[35px]
+
+rounded-[25px]
+md:rounded-[35px]
+
 shadow-2xl">
 
 </div>
+
+
 
 
 
@@ -2607,13 +2625,28 @@ shadow-2xl">
 
 <div>
 
-<h2 class="text-5xl font-bold mb-4">
+<h2 class="
+text-3xl
+md:text-5xl
+
+font-bold
+
+mb-3
+md:mb-4">
 
 Plan Your Next Journey
 
 </h2>
 
-<p class="text-white/70 mb-10">
+
+<p class="
+text-white/70
+
+mb-6
+md:mb-10
+
+text-sm
+md:text-base">
 
 Tell us your travel requirements and receive personalised assistance.
 
@@ -2621,9 +2654,19 @@ Tell us your travel requirements and receive personalised assistance.
 
 
 
+
+
 <form
 onsubmit="sendWhatsApp(event)"
-class="grid md:grid-cols-2 gap-5">
+
+class="
+grid
+
+md:grid-cols-2
+
+gap-4
+md:gap-5">
+
 
 
 <!-- NAME -->
@@ -2635,14 +2678,25 @@ required
 placeholder="Full Name"
 
 class="
-h-14
-rounded-2xl
-px-5
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white
+
 placeholder:text-white/60">
+
+
+
 
 
 <!-- EMAIL -->
@@ -2654,14 +2708,25 @@ required
 placeholder="Email Address"
 
 class="
-h-14
-rounded-2xl
-px-5
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white
+
 placeholder:text-white/60">
+
+
+
 
 
 <!-- PHONE -->
@@ -2674,17 +2739,28 @@ maxlength="10"
 placeholder="Phone Number"
 
 class="
-h-14
-rounded-2xl
-px-5
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white
+
 placeholder:text-white/60">
 
 
-<!-- JOURNEY DATE -->
+
+
+
+<!-- DATE -->
 
 <input
 id="journeyDate"
@@ -2692,13 +2768,23 @@ type="date"
 required
 
 class="
-h-14
-rounded-2xl
-px-5
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white">
+
+
+
 
 
 <!-- DURATION -->
@@ -2711,14 +2797,26 @@ placeholder="Duration (Ex: 5N / 6D)"
 
 class="
 md:col-span-2
-h-14
-rounded-2xl
-px-5
+
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white
+
 placeholder:text-white/60">
+
+
+
 
 
 <!-- MESSAGE -->
@@ -2730,17 +2828,30 @@ placeholder="Tell us about your travel plan..."
 
 class="
 md:col-span-2
-h-36
-rounded-2xl
-p-5
+
+h-24
+md:h-36
+
+rounded-xl
+md:rounded-2xl
+
+p-4
+
 bg-white/10
 border border-white/20
+
 outline-none
+
 text-white
+
 placeholder:text-white/60
+
 resize-none">
 
 </textarea>
+
+
+
 
 
 
@@ -2751,13 +2862,23 @@ type="submit"
 
 class="
 md:col-span-2
-h-14
-rounded-2xl
+
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
 bg-[#0D8BFF]
+
 hover:bg-[#0077e6]
+
 transition
+
 font-semibold
-text-lg">
+
+text-base
+md:text-lg">
 
 Submit Enquiry →
 

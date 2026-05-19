@@ -64,209 +64,352 @@ body{
 </style>
 
 </head>
-
-<body class="bg-white text-black">
-
-<!-- ================= HEADER ================= -->
-<header class="w-full bg-white shadow-sm">
-
-  <div class="max-w-7xl mx-auto px-8 h-[95px] flex items-center justify-between">
-
+<body class="bg-white text-black overflow-x-hidden">
 
 
 
     <!-- ================= HEADER ================= -->
 
-<header class="w-full bg-white shadow-sm sticky top-0 z-50">
+<header class="sticky top-0 z-50 bg-white shadow-sm">
 
-<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-7xl mx-auto px-5">
 
-<div class="h-[95px] flex items-center justify-between">
+<div class="h-[82px] flex justify-between items-center">
 
 
-
-<!-- LOGO (CLICKABLE HOME) -->
-
-<a href="../index.html"
-class="flex items-center">
+<!-- LOGO -->
+<a href="../index.html">
 
 <img
 src="../images/logo-website.webp"
-class="h-[95px] w-auto object-contain"
-alt="Wander & Wonder Travels">
+class="h-[70px] md:h-[85px]">
 
 </a>
 
 
 
-<!-- MENU -->
-
-<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg font-medium">
-
-
-
-<!-- Home -->
+<!-- DESKTOP MENU -->
+<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg">
 
 <a href="../index.html"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Home
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- TOURS -->
 
 <a href="../index.html#tours"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Tours
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- DESTINATIONS -->
 
 <a href="../index.html#destinations"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Destinations
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- OUR STORY -->
 
 <a href="../index.html#story"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Our Story
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
 
-
-
-
-<!-- CONTACT -->
-
 <a href="../index.html#enquiry-section"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Contact Us
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
 
 </nav>
 
+
+
+<!-- Hamburger -->
+
+<button
+id="menuBtn"
+class="md:hidden text-3xl">
+
+☰
+
+</button>
+
 </div>
 
-</header>
-
-
+</div>
 
 
 
 <!-- MOBILE MENU -->
+<div
+id="mobileMenu"
+
+class="
+fixed
+top-0
+-right-full
+w-[80%]
+h-screen
+bg-white
+shadow-xl
+transition-all
+duration-300
+p-8
+z-50">
 
 <button
-class="md:hidden text-3xl text-[#001845]">
+id="closeMenu"
+class="text-4xl">
 
-<i class="fa-solid fa-bars"></i>
+×
 
 </button>
 
 
+<div class="mt-10 flex flex-col gap-8 text-xl">
+<a href="../index.html">Home</a>
+
+<a href="../index.html#tours">Tours</a>
+
+<a href="../index.html#destinations">
+Destinations
+</a>
+
+<a href="../index.html#story">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section">
+Contact Us
+</a>
 
 </div>
+
 </div>
 
 </header>
+
+
+<script>
+
+const menu =
+document.getElementById("mobileMenu");
+
+document.getElementById("menuBtn")
+.onclick=()=>{
+
+menu.style.right="0";
+
+};
+
+document.getElementById("closeMenu")
+.onclick=()=>{
+
+menu.style.right="-100%";
+
+};
+
+</script>
+
+
+
+
+
+<!-- HERO PACKAGE -->
+<section class="py-8 md:py-20 bg-[#eef3f7]">
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- CARD -->
+    <div class="bg-white rounded-[30px] overflow-hidden shadow-xl">
+
+
+      <!-- TOP IMAGE -->
+      <div class="relative h-[350px] md:h-[520px]">
+<img
+src="../images/arunachal-cover.webp"
+
+class="
+w-full
+h-full
+object-cover
+">
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- TITLE -->
+
+        <div class="absolute inset-0 flex flex-col justify-center px-6 text-center">
+
+<h1 class="
+
+text-4xl
+md:text-7xl
+
+font-bold
+leading-tight
+text-white
+
+max-w-4xl
+mx-auto">
+            Arunachal Wonder Tour
+
+          </h1>
+
+          <p class="
+
+mt-5
+text-sm
+md:text-2xl
+
+text-white/90">
+
+            Kaziranga • Dirang • Tawang • Bomdila • Guwahati
+          </p>
+
+        </div>
+
+
+
+        <!-- DAYS BADGE -->
+        <div class="
+
+absolute
+
+top-5
+right-5
+
+md:top-10
+md:right-10
+
+w-20
+h-20
+
+md:w-28
+md:h-28
+
+rounded-full
+
+bg-[#0D8BFF]
+
+border-4 border-white
+
+flex flex-col
+
+items-center
+justify-center">
+
+          <span class="text-3xl md:text-3xl md:text-5xl text-white font-bold">
+            8
+          </span>
+
+          <span class="text-[10px] md:text-sm text-white">
+            DAYS
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <!-- BOTTOM DETAILS -->
+      <div class="grid md:grid-cols-4 gap-8 p-6 md:p-10">
+
+   <div>
+         <h3 class="text-2xl font-semibold">
+
+Tour Price
+
+</h3>
+
+<p class="text-[#0D8BFF] text-4xl font-bold mt-2">
+
+₹13,999
+
+</p>
+
+<p class="text-gray-500">
+
+onwards/person
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3 class="text-2xl font-semibold">
+
+Duration
+
+</h3>
+
+<p class="mt-3 text-gray-600">
+
+7 Nights / 8 Days
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3 class="text-2xl font-semibold">
+
+Departure
+
+</h3>
+
+<p class="mt-3 text-gray-600">
+
+All Year
+
+</p>
+
+</div>
+
+
+
+
+
+
+       <!-- BUTTON -->
+<div class="flex items-center">
+
+<a
+
+href="https://wa.me/918910042688"
+
+class="
+
+bg-[#0D8BFF]
+
+text-white
+
+px-8 py-4
+
+rounded-xl
+
+w-full
+
+text-center">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 
 <!-- FLOATING WHATSAPP BUTTON -->
@@ -319,196 +462,12 @@ class="md:hidden text-3xl text-[#001845]">
 </section>
 
 
-<!-- TOUR PACKAGE CARD -->
-<section class="py-24 bg-[#eef3f7]">
-
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- CARD -->
-    <div class="bg-white rounded-[35px] overflow-hidden shadow-2xl">
-
-      <!-- TOP IMAGE -->
-      <div class="relative h-[500px]">
-
-        <div class="h-[500px] overflow-hidden relative">
-  <img src="../images/arunachal-cover.webp" class="w-full h-full object-cover brightness-90" >
-</div>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/20"></div>
-
-        <!-- CONTENT -->
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-
-          <h1 class="text-7xl font-bold leading-none">
-            
-            Arunachal Wonder Tour
-          </h1>
-
-          <p class="mt-4 text-2xl text-white/90">
-            Kaziranga • Dirang • Tawang • Bomdila • Guwahati
-          </p>
-
-        </div>
-
-
-
-        <!-- DAYS BADGE -->
-        <div class="absolute top-10 right-10 w-28 h-28 rounded-full bg-[#0D8BFF] border-4 border-white flex flex-col items-center justify-center shadow-2xl">
-
-          <span class="text-5xl font-bold text-white">
-            8
-          </span>
-
-          <span class="text-white tracking-widest text-sm">
-            DAYS
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-
-
-      <!-- BOTTOM DETAILS -->
-      <div class="grid md:grid-cols-4 gap-8 p-10 items-center">
-
-        <!-- TOUR INFO -->
-        <div>
-
-          <h3 class="text-3xl font-semibold mb-4">
-            Arunachal Tour - 2026-27
-          </h3>
-
-          <p class="text-gray-500 leading-8 text-lg">
-            Kaziranga - Dirang - Tawang - Bomdila - Guwahati
-          </p>
-
-        </div>
-
-
-
-
-
-        <!-- DEPARTURE -->
-        <div class="md:border-l md:border-r border-gray-300 px-6">
-
-          <h3 class="text-3xl font-semibold mb-5">
-            Departure Dates
-          </h3>
-
-          <div class="flex flex-wrap gap-3">
-
-            <span class="px-5 py-2 rounded-full border border-gray-300 text-gray-600">
-              All Year
-            </span>
-
-     
-
-          </div>
-
-        </div>
-
-
-
-
-
-        <!-- PRICE -->
-        <div>
-
-          <h3 class="text-3xl font-semibold mb-3">
-            Package Price
-          </h3>
-
-          <p class="text-5xl font-bold text-[#0D8BFF]">
-            ₹13,999
-          </p>
-
-          <p class="text-gray-500 mt-2">
-            onwards per person
-          </p>
-
-          <p class="text-sm text-gray-400 mt-1">
-            Minimum 6 persons required
-          </p>
-
-        </div>
-
-
-
-
-
-       <!-- BUTTON -->
-<div class="flex justify-center md:justify-end">
-
-  <a
-    href="https://wa.me/918910042688?text=Hello%20I%20am%20interested%20in%20the%20Arunachal%20Tour%20Package"
-    target="_blank"
-    class="bg-[#0D8BFF] hover:bg-[#0077e6] transition text-white text-xl font-semibold px-10 py-5 rounded-2xl shadow-lg inline-flex items-center gap-3"
-  >
-    Contact Us
-  </a>
-
-</div>
-
-<!-- FLOATING WHATSAPP BUTTON -->
-<a
-  href="https://wa.me/918910042688?text=Hello%20I%20am%20interested%20in%20the%20Arunachal%20Tour%20Package"
-  class="whatsapp-float"
-  target="_blank"
->
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-    alt="WhatsApp"
-  />
-</a>
-
-<style>
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-</style>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
 <!-- PLACES -->
-<section class="py-24 bg-white">
+<section class="py-14 md:py-24 bg-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-5xl text-center font-semibold mb-16">
+    <h2 class="text-3xl md:text-5xl text-center font-semibold mb-16">
       Places To Visit
     </h2>
 
@@ -613,9 +572,9 @@ style="object-position: 55% center;"
 
 
 <!-- TOUR HIGHLIGHTS -->
-<section class="py-24 bg-[#f5f7fb] overflow-hidden">
+<section class="py-14 md:py-24 bg-[#f5f7fb] overflow-hidden">
 
-  <h2 class="text-5xl text-center font-semibold mb-16">
+  <h2 class="text-3xl md:text-5xl text-center font-semibold mb-16">
     Tour Highlights
   </h2>
 
@@ -889,11 +848,11 @@ setInterval(changeSlide, 3000);
 
 
 <!-- ITINERARY -->
-<section class="py-24 bg-white">
+<section class="py-14 md:py-24 bg-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-5xl text-center font-semibold mb-20">
+    <h2 class="text-3xl md:text-5xl text-center font-semibold mb-20">
       Tour Itinerary
     </h2>
 
@@ -995,11 +954,11 @@ setInterval(changeSlide, 3000);
 
 
 <!-- PACKAGE PRICE -->
-<section class="py-24 bg-white">
+<section class="py-14 md:py-24 bg-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-5xl text-center font-semibold mb-16">
+    <h2 class="text-3xl md:text-5xl text-center font-semibold mb-16">
       Package Price
     </h2>
 
@@ -1059,7 +1018,7 @@ setInterval(changeSlide, 3000);
 </section>
 
 <!-- INCLUSIONS & EXCLUSIONS -->
-<section class="py-24 bg-white">
+<section class="py-14 md:py-24 bg-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
@@ -1153,110 +1112,329 @@ setInterval(changeSlide, 3000);
 </section>
 
 
-<!-- ENQUIRY SECTION -->
-<section class="py-20 bg-[#001845] text-white overflow-hidden">
+<!-- ================= ENQUIRY SECTION ================= -->
 
-  <div class="max-w-7xl mx-auto px-6">
+<section
+id="enquiry-section"
 
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+class="
+py-14
+md:py-24
+
+bg-[#001845]
+
+text-white">
+
+<div class="max-w-7xl mx-auto px-5 md:px-6">
+
+<div class="
+grid
+
+lg:grid-cols-2
+
+gap-8
+md:gap-12
+
+items-center">
 
 
 
+<!-- LEFT IMAGE -->
 
-      <!-- LEFT SIDE -->
-      <div>
+<div>
 
-        <h2 class="text-5xl font-semibold mb-8 leading-tight">
-          Let's Plan Your Next Trip
-        </h2>
+<img
+src="../images/arunachal-cover.webp"
 
+class="
+w-full
 
+h-[240px]
+md:h-[620px]
 
+object-cover
 
+rounded-[25px]
+md:rounded-[35px]
 
-        <!-- IMAGE -->
-        <div class="rounded-[30px] overflow-hidden shadow-2xl h-[520px]">
+shadow-2xl">
 
-          <div class="h-[500px] w-full overflow-hidden">
-  <img 
-    src="../images/arunachal-cover.webp"
-    class="w-full h-full object-cover object-[50%_105%]"
-  />
 </div>
 
-        </div>
-
-      </div>
 
 
 
 
+<!-- RIGHT FORM -->
+
+<div>
+
+<h2 class="
+text-3xl md:text-5xl
+
+font-bold
+
+mb-3
+md:mb-4">
+
+Plan Your Next Journey
+
+</h2>
 
 
-      <!-- RIGHT SIDE -->
-      <div class="h-[520px] flex items-center">
+<p class="
+text-white/70
 
-        <form class="w-full grid md:grid-cols-2 gap-5">
+mb-6
+md:mb-10
 
-          <!-- NAME -->
-          <input 
-            type="text" 
-            placeholder="Name"
-            class="h-14 rounded-2xl px-5 bg-white/10 border border-white/20 outline-none placeholder:text-white/60"
-          >
+text-sm
+md:text-base">
 
+Tell us your travel requirements and receive personalised assistance.
 
-
-          <!-- EMAIL -->
-          <input 
-            type="email" 
-            placeholder="Email"
-            class="h-14 rounded-2xl px-5 bg-white/10 border border-white/20 outline-none placeholder:text-white/60"
-          >
-
-
-
-          <!-- MOBILE -->
-          <input 
-            type="number" 
-            placeholder="Mobile Number"
-            class="h-14 rounded-2xl px-5 bg-white/10 border border-white/20 outline-none placeholder:text-white/60"
-          >
-
-
-
-          <!-- DATE -->
-          <input 
-            type="date"
-            class="h-14 rounded-2xl px-5 bg-white/10 border border-white/20 outline-none text-white"
-          >
-
-
-
-          <!-- MESSAGE -->
-          <textarea 
-            placeholder="Write Your Message"
-            class="md:col-span-2 h-36 rounded-2xl p-5 bg-white/10 border border-white/20 outline-none placeholder:text-white/60"
-          ></textarea>
+</p>
 
 
 
 
 
-          <!-- BUTTON -->
-          <button 
-            class="md:col-span-2 h-14 rounded-2xl bg-[#0D8BFF] hover:bg-[#0077e6] transition text-white text-lg font-semibold shadow-xl"
-          >
-            Submit Enquiry
-          </button>
+<form
+onsubmit="sendWhatsApp(event)"
 
-        </form>
+class="
+grid
 
-      </div>
+md:grid-cols-2
 
-    </div>
+gap-4
+md:gap-5">
 
-  </div>
+
+
+<!-- NAME -->
+
+<input
+id="name"
+type="text"
+required
+placeholder="Full Name"
+
+class="
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white
+
+placeholder:text-white/60">
+
+
+
+
+
+<!-- EMAIL -->
+
+<input
+id="email"
+type="email"
+required
+placeholder="Email Address"
+
+class="
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white
+
+placeholder:text-white/60">
+
+
+
+
+
+<!-- PHONE -->
+
+<input
+id="phone"
+type="tel"
+required
+maxlength="10"
+placeholder="Phone Number"
+
+class="
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white
+
+placeholder:text-white/60">
+
+
+
+
+
+<!-- DATE -->
+
+<input
+id="journeyDate"
+type="date"
+required
+
+class="
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white">
+
+
+
+
+
+<!-- DURATION -->
+
+<input
+id="duration"
+type="text"
+required
+placeholder="Duration (Ex: 5N / 6D)"
+
+class="
+md:col-span-2
+
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+px-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white
+
+placeholder:text-white/60">
+
+
+
+
+
+<!-- MESSAGE -->
+
+<textarea
+id="message"
+required
+placeholder="Tell us about your travel plan..."
+
+class="
+md:col-span-2
+
+h-24
+md:h-36
+
+rounded-xl
+md:rounded-2xl
+
+p-4
+
+bg-white/10
+border border-white/20
+
+outline-none
+
+text-white
+
+placeholder:text-white/60
+
+resize-none">
+
+</textarea>
+
+
+
+
+
+
+<!-- BUTTON -->
+
+<button
+type="submit"
+
+class="
+md:col-span-2
+
+h-12
+md:h-14
+
+rounded-xl
+md:rounded-2xl
+
+bg-[#0D8BFF]
+
+hover:bg-[#0077e6]
+
+transition
+
+font-semibold
+
+text-base
+md:text-lg">
+
+Submit Enquiry →
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
