@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+   <!-- ================= HEADER ================= -->
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+
+<div class="max-w-7xl mx-auto px-5">
+
+<div class="h-[82px] flex justify-between items-center">
+
+
+<!-- LOGO -->
+<a href="../index.html">
+
+<img
+src="../images/logo-website.webp"
+class="h-[70px] md:h-[85px]">
+
+</a>
+
+
+
+<!-- DESKTOP MENU -->
+<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg">
+
+<a href="../index.html"
+class="hover:text-[#0D8BFF] transition">
+Home
+</a>
+
+<a href="../index.html#tours"
+class="hover:text-[#0D8BFF] transition">
+Tours
+</a>
+
+<a href="../index.html#destinations"
+class="hover:text-[#0D8BFF] transition">
+Destinations
+</a>
+
+<a href="../index.html#story"
+class="hover:text-[#0D8BFF] transition">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section"
+class="hover:text-[#0D8BFF] transition">
+Contact Us
+</a>
+
+</nav>
+
+
+
+<!-- Hamburger -->
+
+<button
+id="menuBtn"
+class="md:hidden text-3xl">
+
+☰
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- MOBILE MENU -->
+<div
+id="mobileMenu"
+
+class="
+fixed
+top-0
+-right-full
+w-[80%]
+h-screen
+bg-white
+shadow-xl
+transition-all
+duration-300
+p-8
+z-50">
+
+<button
+id="closeMenu"
+class="text-4xl">
+
+×
+
+</button>
+
+
+<div class="mt-10 flex flex-col gap-8 text-xl">
+<a href="../index.html">Home</a>
+
+<a href="../index.html#tours">Tours</a>
+
+<a href="../index.html#destinations">
+Destinations
+</a>
+
+<a href="../index.html#story">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<script>
+
+const menu =
+document.getElementById("mobileMenu");
+
+document.getElementById("menuBtn")
+.onclick=()=>{
+
+menu.style.right="0";
+
+};
+
+document.getElementById("closeMenu")
+.onclick=()=>{
+
+menu.style.right="-100%";
+
+};
+
+</script>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>
+Shillong Tourism Guide – Best Places, History, Weather & Travel Tips
+</title>
+
+<meta name="description"
+content="Complete Shillong tourism guide covering history, best places to visit, best time to visit, Police Bazar, Shillong Peak, Ward's Lake, Umiam Lake, Butterfly Museum, food, weather and travel tips.">
+
+<meta name="keywords"
+content="shillong tourism guide, shillong travel blog, best places in shillong, shillong weather, shillong peak, shillong police bazar">
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NJESEKWCN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9NJESEKWCN');
+</script>
+<!-- GOOGLE ANALYTICS END -->
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Josefin Sans',sans-serif;
+color:#1f2937;
+line-height:1.9;
+background:white;
+}
+
+.blog-container{
+max-width:900px;
+margin:auto;
+padding:40px 25px;
+}
+
+.blog-container p{
+font-size:21px;
+color:#4b5563;
+margin:28px 0;
+}
+
+.blog-container li{
+font-size:21px;
+color:#4b5563;
+margin:12px 0;
+}
+
+h1{
+font-size:58px;
+font-weight:700;
+line-height:1.2;
+margin-bottom:25px;
+color:#111827;
+}
+
+h2{
+font-size:42px;
+font-weight:700;
+margin-top:90px;
+margin-bottom:28px;
+color:#111827;
+}
+
+h3{
+font-size:32px;
+font-weight:600;
+margin-top:65px;
+margin-bottom:18px;
+}
+
+.feature-img{
+
+width:100%;
+height:500px;
+
+object-fit:cover;
+
+border-radius:32px;
+
+margin:40px 0;
+}
+
+.image-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+margin:35px 0;
+
+}
+
+.image-grid img{
+
+height:240px;
+width:100%;
+
+object-fit:cover;
+
+border-radius:22px;
+
+}
+
+.highlight{
+
+background:#f8fafc;
+
+padding:30px;
+
+border-left:5px solid #0D8BFF;
+
+border-radius:16px;
+
+margin:40px 0;
+
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+h2{
+font-size:34px;
+}
+
+p{
+font-size:18px;
+}
+
+.image-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.feature-img{
+
+height:260px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="blog-container">
+
+
+<!-- HERO IMAGE -->
+
+<img
+src="../images/meghalaya-cover.webp"
+class="feature-img">
+
+
+
+<!-- TITLE -->
+
+<h1>
+
+Shillong Tourism Guide – The Scotland of East
+
+</h1>
+
+
+<p>
+
+Surrounded by rolling hills, waterfalls, pine forests, lakes, and misty landscapes, Shillong is one of the most beautiful hill stations in Northeast India. Located in the scenic state of Meghalaya, Shillong is often called the “Scotland of the East” because of its lush green hills, cool weather, colonial charm, and breathtaking natural beauty.
+
+Shillong is famous for its peaceful atmosphere, vibrant local culture, music scene, waterfalls, scenic viewpoints, and nearby natural wonders. Whether you are planning a honeymoon, family vacation, backpacking trip, road trip, or a relaxing mountain escape, Shillong offers an unforgettable travel experience in the heart of Northeast India.
+
+
+</p>
+
+
+
+<strong>
+
+Why Shillong is Famous Among Tourists
+
+</strong>
+
+<ul>
+
+Shillong is widely known for its stunning landscapes, pleasant climate, and rich Khasi culture. Unlike crowded hill stations, Shillong offers a refreshing combination of nature, culture, waterfalls, and calm mountain life.
+
+
+
+<div class="highlight">
+
+<ul>
+<strong>
+Shillong is famous for::
+</strong>
+
+<li>Scenic hills and pine forests</li>
+
+<li>Beautiful waterfalls and lakes</li>
+
+<li>Pleasant weather throughout the year</li>
+
+<li>Rich Khasi tribal culture</li>
+
+<li>Vibrant music and café scene/li>
+
+<li>Colonial architecture and churches</li>
+
+<li>Pleasant weather throughout the year</li>
+
+<li>One of the cleanest and greenest hill destinations in India</li>
+
+<li>Gateway to Cherrapunji and Dawki</li>
+</ul>
+
+
+</div>
+
+<div class="image-grid">
+
+<img src="../images/shillong-peak-viewpoint.webp">
+
+<img src="../images/elephant-falls-shillong.webp">
+
+<img src="../images/butterfly-museum-shillong.webp">
+
+<img src="../images/police-bazar-shillong.webp">
+
+
+</div>
+
+The destination is loved by honeymoon couples, families, photographers, backpackers, and nature lovers alike.
+
+
+
+<h2>
+
+History of Shillong
+</h2>
+
+<p>
+
+Shillong became an important administrative and educational center during British rule in Northeast India. The British were attracted by its cool climate and scenic landscapes and developed it as a hill station during the colonial era.
+
+Before Meghalaya became a separate state in 1972, Shillong served as the capital of undivided Assam. Over time, the city evolved into a major cultural and tourism hub while preserving its Khasi tribal traditions and natural beauty.
+
+Shillong is also famous for its musical culture and is often called the “Rock Capital of India” because of its strong live music scene and talented musicians.
+
+<p>
+
+
+<h2>
+
+Best Places to Visit in Shillong
+</h2>
+
+
+
+<h3>
+
+1. Umiam Lake
+</h3>
+
+<p>
+
+Umiam Lake is one of the most scenic attractions near Shillong. Surrounded by green hills and forests, the lake offers breathtaking sunrise and sunset views.
+
+Popular activities include:
+
+<ul>
+
+<li>Boating</li>
+
+<li>Kayaking</li>
+
+<li>Photography</li>
+
+<li>Lakeside relaxation</li>
+
+<li>Scenic road trip stops</li>
+
+
+</ul>
+
+<div class="image-grid">
+
+<img src="../images/umiam-lake-meghalaya-2.webp">
+
+<img src="..//images/umiam-lake-meghalaya.webp">
+
+
+</div>
+
+
+<h3>
+
+2. Elephant Falls
+
+</h3>
+
+</p>
+
+
+Elephant Falls is one of the most famous waterfalls in Meghalaya. The waterfall flows through multiple levels surrounded by lush greenery and rocky landscapes.
+
+It is one of the must-visit attractions for nature lovers and photographers.
+
+
+</p>
+
+
+
+<h3>
+
+3. Shillong Peak
+
+</h3>
+
+<p>
+
+Shillong Peak is the highest point in Shillong offering panoramic views of the city, surrounding hills, and valleys.
+
+The viewpoint is especially beautiful during sunrise and sunset.
+
+
+</p>
+
+<h3>
+
+4. Ward’s Lake
+
+
+</h3>
+
+<p>
+
+Ward's Lake is a peaceful man-made lake surrounded by gardens and walking paths.
+
+Travelers often enjoy:
+
+
+</p>
+
+<div class="highlight">
+
+<ul>
+
+
+<li>Boating</li>
+
+<li>Relaxing walks</li>
+
+<li>Photography</li>
+
+<li>Peaceful family outings</li>
+
+</p>
+
+</div>
+
+
+<h3>
+
+5. Police Bazaar
+
+</h3>
+
+<p>
+
+Police Bazaar is the heart of Shillong city and one of the best places for shopping, cafés, street food, and local experiences.
+
+Popular shopping items include:
+
+<p>
+
+<div class="highlight">
+
+<ul>
+
+
+<li>Khasi handicrafts</li>
+
+<li>Traditional shawls</li>
+
+<li>Bamboo products</li>
+
+<li>Local spices and snacks</li>
+
+</p>
+
+</div>
+
+<h3>
+
+6. Don Bosco Museum
+
+</h3>
+
+<p>
+
+Don Bosco Museum showcases the culture, traditions, history, and lifestyle of Northeast Indian tribes.
+
+The museum is considered one of the best cultural museums in Northeast India.
+
+</p>
+
+
+<h3>
+
+7. Laitlum Canyon
+</h3>
+
+<p>
+
+Laitlum Canyons is one of the most breathtaking viewpoints near Shillong. The dramatic cliffs, valleys, clouds, and panoramic landscapes make it a paradise for photographers and trekkers.
+</p>
+
+8. Rock Garden & Ganga Maya Park
+
+</h3>
+
+<p>
+
+These scenic attractions near Darjeeling are famous for waterfalls, landscaped gardens, mountain streams, and peaceful natural surroundings.
+
+</p>
+
+<h2>
+
+Best Time to Visit Shillong
+
+</h2>
+
+<p>
+
+Shillong is a year-round destination with every season offering a different charm.
+</p>
+
+
+<h3>Summer Season (March to June)</h3>
+
+<p>
+
+Pleasant weather
+
+<p>
+
+Ideal for sightseeing and road trips
+
+<p>
+
+Perfect for family vacations and honeymoons
+
+
+<p>
+
+Temperature ranges between 15°C to 25°C.
+
+</p>
+
+<h3>Monsoon Season (July to September)</h3>
+
+<p>
+
+Lush green landscapes
+
+<p>
+
+Waterfalls in full flow
+
+<p>
+
+Beautiful misty mountain scenery
+
+<p>
+
+Shillong and Meghalaya receive heavy rainfall, making the region incredibly scenic during monsoon.
+
+</p>
+
+
+
+<h3>Winter Season (October to February)</h3>
+
+<p>
+
+Cool and pleasant weather
+
+<p>
+
+Clear skies and scenic views
+
+
+<p>
+
+Perfect for photography and peaceful holidays
+
+<p>
+
+Peaceful atmosphere
+
+<p>
+
+Winter temperatures may occasionally drop close to freezing in some nearby areas.
+
+
+</p>
+
+
+<h2>
+
+Things to Do in Shillong
+
+</h2>
+
+<ul>
+
+<li>Explore waterfalls and lakes</li>
+
+<li>Café hopping and live music experiences</li>
+
+<li>Shopping at Police Bazaar</li>
+
+<li>Road trips through Meghalaya</li>
+
+<li>Photography and sightseeing</li>
+
+<li>Trekking and canyon exploration</li>
+
+<li>Exploring Khasi culture and food</li>
+
+<li>Visiting nearby Cherrapunji and Dawki</li>
+
+</ul>
+
+
+<h2>
+
+Local Food to Try in Shillong
+
+</h2>
+
+<ul>
+
+Shillong offers delicious Khasi and Northeast Indian cuisine.
+
+Popular dishes include:
+
+
+<li>Jadoh</li>
+
+<li>Tungrymbai</li>
+
+<li>Dohneiiong</li>
+
+<li>Momos and thukpa</li>
+
+<li>Bamboo shoot dishes</li>
+
+<li>Smoked meat preparations</li>
+
+<li>Local tea and snacks</li>
+
+
+<p>
+
+Shillong’s cafés and bakeries are also highly popular among travelers.
+
+
+</p>
+
+</ul>
+
+
+<h2>
+
+How to Reach Shillong
+
+</h2>
+
+<h3>By Road</h3>
+
+<p>
+
+Shillong is well connected by road from Guwahati and nearby Northeast Indian cities.
+
+
+</p>
+
+<h3>By Train</h3>
+
+<p>
+
+The nearest major railway station is Guwahati Railway Station (GHY).
+
+</p>
+
+
+<h3>By Air</h3>
+
+<p>
+
+The nearest airport is Shillong Airport, though most travelers use Lokpriya Gopinath Bordoloi International Airport for better connectivity.
+
+</p>
+
+<h2>
+
+Why Shillong Should Be on Your Travel Bucket List
+
+</h2>
+<p>
+
+Shillong is not just a hill station — it is a complete experience filled with waterfalls, forests, lakes, music, culture, and breathtaking landscapes. The peaceful atmosphere, cool weather, scenic road trips, and warm local hospitality make Shillong one of the most beautiful destinations in Northeast India.
+
+Whether you are planning a honeymoon, backpacking trip, family holiday, photography expedition, or a peaceful escape into nature, Shillong offers unforgettable memories in the lap of Meghalaya’s hills.
+
+</p>
+
+<h2>
+
+Wander and Wonder Travels – Shillong Tour Packages
+
+</h2>
+
+<p>
+
+Wander and Wonder Travels offers professionally curated Northeast India tour packages covering Shillong, Cherrapunji, Dawki, Kaziranga, Tawang, Gangtok, Darjeeling, and beyond.
+
+</p>
+
+<p>
+Why Choose Wander and Wonder Travels?
+</p>
+
+<li>Carefully Curated Northeast Itineraries</li>
+
+<ul>
+
+We design routes that combine sightseeing, relaxation, local experiences, and scenic Himalayan beauty.<li>
+
+</ul>
+
+<li>Budget Friendly group tours</li>
+
+<ul>
+
+Affordable packages suitable for couples, families, honeymooners, and adventure travelers.
+
+</ul>
+
+<li>Experienced Trip coordination</li>
+
+<ul>
+
+From transportation to accommodation management, our team ensures smooth and hassle-free journeys.
+
+</ul>
+
+<li>Authentic Local Experiences</li>
+
+<ul>
+
+We help travelers explore local culture, food, hidden gems, monasteries, and offbeat Himalayan destinations.
+
+</ul>
+
+<li>Reliable travel support</li>
+
+<ul>
+
+Our dedicated support team remains available throughout the journey to ensure comfort, safety, and memorable experiences.
+
+</ul>
+
+<li>If you are dreaming of waterfalls, misty mountains, scenic road trips, and the magical beauty of Northeast India, Wander and Wonder Travels is your ideal travel partner for unforgettable journeys through Shillong and Meghalaya.</li>
+
+<a
+href="../index.html"
+
+class="inline-block
+mt-10
+bg-[#0D8BFF]
+text-white
+px-8 py-5
+rounded-2xl
+text-xl">
+
+Explore Shillong Packages →
+
+</a>
+
+
+</div>
+
+
+<!-- YOUR EXISTING FOOTER GOES BELOW -->
+
+
+</body>
+</html>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+
+<!-- ================= FOOTER CSS START ================= -->
+<style>
+
+
+.travel-footer{
+background:#fff;
+padding:55px 6%;
+border-top:1px solid #e5e7eb;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
+gap:40px;
+align-items:flex-start;
+}
+
+/* BRAND */
+
+.footer-brand{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.footer-logo{
+width:110px;
+height:auto;
+}
+
+.footer-brand h3{
+font-size:28px;
+font-weight:300;
+line-height:1.3;
+color:#60a5fa;
+margin:0;
+}
+
+/* LINKS */
+
+.footer-links,
+.footer-contact{
+
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.footer-links h4,
+.footer-contact h4{
+
+font-size:24px;
+font-weight:500;
+color:#60a5fa;
+margin-bottom:8px;
+}
+
+.footer-links a,
+.footer-contact p{
+
+text-decoration:none;
+color:#6b7280;
+font-size:16px;
+}
+
+.footer-links a:hover{
+color:#2563eb;
+}
+
+/* BUTTON */
+
+.contact-btn{
+
+background:#25D366;
+color:#fff;
+padding:11px 20px;
+border-radius:12px;
+text-decoration:none;
+width:max-content;
+font-weight:600;
+}
+
+.contact-btn:hover{
+background:#1ebe5d;
+}
+
+/* SOCIAL */
+
+.socials{
+
+display:flex;
+gap:12px;
+margin-top:8px;
+}
+
+.social-btn{
+
+width:44px;
+height:44px;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:#f3f4f6;
+
+font-size:18px;
+
+color:#374151;
+
+transition:.3s;
+}
+
+.social-btn:hover{
+
+background:#2563eb;
+color:#fff;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+margin-top:40px;
+padding-top:20px;
+
+border-top:1px solid #e5e7eb;
+
+color:#6b7280;
+
+font-size:15px;
+}
+
+
+
+/* ========= MOBILE FOOTER ========= */
+
+@media(max-width:900px){
+
+.travel-footer{
+padding:45px 20px;
+}
+
+
+/* LOGO */
+
+.footer-brand{
+
+align-items:center;
+
+text-align:center;
+
+margin-bottom:30px;
+}
+
+.footer-logo{
+width:85px;
+}
+
+.footer-brand h3{
+
+font-size:24px;
+
+margin-top:10px;
+}
+
+
+/* 3 COLUMN LAYOUT */
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:18px;
+
+align-items:start;
+}
+
+
+/* BRAND FULL WIDTH */
+
+.footer-brand{
+grid-column:1/-1;
+}
+
+
+/* TOURS SUPPORT TERMS */
+
+.footer-links{
+
+align-items:flex-start;
+
+text-align:left;
+}
+
+.footer-links h4{
+
+font-size:18px;
+
+margin-bottom:8px;
+}
+
+.footer-links a{
+
+font-size:14px;
+
+line-height:1.6;
+}
+
+
+/* GET IN TOUCH BELOW */
+
+.footer-contact{
+
+grid-column:1/-1;
+
+margin-top:25px;
+
+align-items:center;
+
+text-align:center;
+}
+
+.footer-contact h4{
+
+font-size:22px;
+
+margin-bottom:8px;
+}
+
+.footer-contact p{
+
+font-size:15px;
+}
+
+
+/* BUTTON */
+
+.contact-btn{
+
+margin:auto;
+
+padding:10px 18px;
+
+font-size:14px;
+}
+
+
+/* SOCIALS */
+
+.socials{
+
+justify-content:center;
+
+margin-top:12px;
+}
+
+.social-btn{
+
+width:40px;
+height:40px;
+
+font-size:17px;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+margin-top:28px;
+
+text-align:center;
+
+font-size:13px;
+}
+
+}
+</style>
+
+<!-- ================= FOOTER CSS END ================= -->
+
+
+
+
+
+<!-- ================= FOOTER HTML START ================= -->
+
+<footer class="travel-footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+
+      <img 
+        src="../images/logo-website.webp"
+        alt="Logo"
+        class="footer-logo"
+      >
+
+      <h3>
+        Your Journey<br>
+        Our Passion
+      </h3>
+
+    </div>
+
+
+
+
+
+    <!-- TOURS -->
+    <div class="footer-links">
+
+      <h4>Tours</h4>
+
+      <a href="../index.html#tours"
+class="hover:text-[#0D8BFF] transition">
+
+Tours
+
+</a>
+
+      <a href="../index.html#destinations"
+class="hover:text-[#0D8BFF] transition">
+
+Destinations
+
+</a>
+      
+      <a href="#">Travel Blogs</a>
+
+    </div>
+
+
+
+
+
+    <!-- SUPPORT -->
+    <div class="footer-links">
+
+      <h4>Support</h4>
+
+  
+
+     <a
+href="../policy/cancellation.html"
+class="hover:text-[#0D8BFF] transition">
+
+Cancellation Policy
+
+</a>
+
+     <a
+href="../policy/cancellation.html#refund-policy"
+class="hover:text-[#0D8BFF] transition">
+
+Refund Policy
+
+</a>
+
+
+<a
+href="../policy/cancellation.html#terms-conditions"
+class="hover:text-[#0D8BFF] transition">
+
+Terms & Conditions
+</a>
+
+
+</div>
+
+
+    <!-- WEBSITE TERMS -->
+    <div class="footer-links">
+
+      <h4>Website Terms</h4>
+
+      <a
+href="../policy/cancellation.html#privacy-policy"
+class="hover:text-[#0D8BFF] transition">
+
+Privacy Policy
+</a>
+
+      <a
+href="../policy/cancellation.html#terms-conditions"
+class="hover:text-[#0D8BFF] transition">
+
+Terms of Use
+</a>
+
+    </div>
+
+
+
+
+
+ <!-- CONTACT -->
+<div class="footer-contact">
+
+  <h4>Get in Touch</h4>
+
+  <p>+91 8910042688</p>
+
+  <a 
+    href="https://wa.me/918910042688"
+    target="_blank"
+    class="contact-btn"
+  >
+    Contact Us
+  </a>
+
+
+
+  <!-- SOCIAL MEDIA -->
+  <div class="socials">
+
+    <!-- FACEBOOK -->
+    <a 
+      href="https://www.facebook.com/share/1CRiPPiVLN/"
+      target="_blank"
+      class="social-btn"
+    >
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+
+
+    <!-- INSTAGRAM -->
+    <a 
+      href="https://instagram.com/yournexttripofficial?igsh=MW51aWJuN3hhc2E2cQ=="
+      target="_blank"
+      class="social-btn"
+    >
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+
+
+    <!-- WHATSAPP -->
+    <a 
+      href="https://wa.me/918910042688"
+      target="_blank"
+      class="social-btn"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+
+    <!-- YOUTUBE -->
+    <a
+href="https://www.youtube.com/@YourNextTripTravelVlogs"
+target="_blank"
+class="social-btn"
+>
+
+<i class="fa-brands fa-youtube"></i>
+
+</a>
+  </div>
+
+</div>
+
+
+
+<style>
+
+.contact-btn{
+  background:#25D366 !important;
+  color:#ffffff;
+  text-decoration:none;
+  padding:12px 22px;
+  border-radius:14px;
+  width:max-content;
+  font-weight:600;
+  transition:0.3s;
+  display:inline-block;
+}
+
+.contact-btn:hover{
+  background:#1ebe5d !important;
+}
+
+
+
+/* SOCIALS */
+.socials{
+  display:flex;
+  gap:14px;
+  margin-top:10px;
+}
+
+.social-btn{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:#f3f4f6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#374151;
+  text-decoration:none;
+  font-size:20px;
+  transition:0.3s;
+}
+
+.social-btn:hover{
+  background:#2563eb;
+  color:#ffffff;
+  transform:translateY(-4px);
+}
+
+</style>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+
+    © All rights reserved | 2026 Wander & Wonder Travels
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER HTML END ================= -->
