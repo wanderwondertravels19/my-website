@@ -157,6 +157,8 @@ class="text-4xl">
 
 </button>
 
+
+<div class="mt-10 flex flex-col gap-8 text-xl">
 <a href="../index.html">Home</a>
 
 <a href="../index.html#tours">Tours</a>
@@ -1411,164 +1413,287 @@ Submit Enquiry →
 <!-- ================= FOOTER CSS START ================= -->
 <style>
 
+
 .travel-footer{
-  background:#ffffff;
-  padding:70px 8%;
-  border-top:1px solid #e5e7eb;
+background:#fff;
+padding:55px 6%;
+border-top:1px solid #e5e7eb;
 }
 
 .footer-container{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
-  gap:40px;
-  align-items:flex-start;
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
+gap:40px;
+align-items:flex-start;
 }
 
-
-
 /* BRAND */
+
 .footer-brand{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:18px;
+display:flex;
+flex-direction:column;
+gap:16px;
 }
 
 .footer-logo{
-  width:110px;
-  height:auto;
-  object-fit:contain;
+width:110px;
+height:auto;
 }
 
 .footer-brand h3{
-  color:#60a5fa;
-  font-size:28px;
-  line-height:1.3;
-  font-weight:300;
-  margin:0;
+font-size:28px;
+font-weight:300;
+line-height:1.3;
+color:#60a5fa;
+margin:0;
 }
 
-
-
 /* LINKS */
+
 .footer-links,
 .footer-contact{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 
 .footer-links h4,
 .footer-contact h4{
-  color:#60a5fa;
-  font-size:26px;
-  font-weight:500;
-  margin-bottom:10px;
+
+font-size:24px;
+font-weight:500;
+color:#60a5fa;
+margin-bottom:8px;
 }
 
-.footer-links a{
-  text-decoration:none;
-  color:#6b7280;
-  transition:0.3s;
-  width:max-content;
+.footer-links a,
+.footer-contact p{
+
+text-decoration:none;
+color:#6b7280;
+font-size:16px;
 }
 
 .footer-links a:hover{
-  color:#2563eb;
+color:#2563eb;
 }
 
-
-
-/* CONTACT */
-.footer-contact p{
-  color:#6b7280;
-  margin:0;
-}
+/* BUTTON */
 
 .contact-btn{
-  background:#111827;
-  color:#ffffff;
-  text-decoration:none;
-  padding:12px 22px;
-  border-radius:14px;
-  width:max-content;
-  font-weight:600;
-  transition:0.3s;
+
+background:#25D366;
+color:#fff;
+padding:11px 20px;
+border-radius:12px;
+text-decoration:none;
+width:max-content;
+font-weight:600;
 }
 
 .contact-btn:hover{
-  background:#2563eb;
+background:#1ebe5d;
 }
 
+/* SOCIAL */
 
-
-/* SOCIALS */
 .socials{
-  display:flex;
-  gap:14px;
-  margin-top:10px;
+
+display:flex;
+gap:12px;
+margin-top:8px;
 }
 
 .social-btn{
-  width:46px;
-  height:46px;
-  border-radius:50%;
-  background:#f3f4f6;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#374151;
-  text-decoration:none;
-  font-size:20px;
-  transition:0.3s;
+
+width:44px;
+height:44px;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:#f3f4f6;
+
+font-size:18px;
+
+color:#374151;
+
+transition:.3s;
 }
 
 .social-btn:hover{
-  background:#2563eb;
-  color:#ffffff;
-  transform:translateY(-4px);
+
+background:#2563eb;
+color:#fff;
 }
 
+/* COPYRIGHT */
 
-
-/* BOTTOM */
 .footer-bottom{
-  margin-top:50px;
-  border-top:1px solid #e5e7eb;
-  padding-top:20px;
-  color:#6b7280;
-  font-size:15px;
+
+margin-top:40px;
+padding-top:20px;
+
+border-top:1px solid #e5e7eb;
+
+color:#6b7280;
+
+font-size:15px;
 }
 
 
 
-/* MOBILE */
+/* ========= MOBILE FOOTER ========= */
+
 @media(max-width:900px){
 
-  .footer-container{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .footer-brand{
-    align-items:center;
-    text-align:center;
-  }
-
-  .footer-links,
-  .footer-contact{
-    align-items:center;
-    text-align:center;
-  }
-
-  .footer-bottom{
-    text-align:center;
-  }
-
+.travel-footer{
+padding:45px 20px;
 }
 
-</style>
 
+/* LOGO */
+
+.footer-brand{
+
+align-items:center;
+
+text-align:center;
+
+margin-bottom:30px;
+}
+
+.footer-logo{
+width:85px;
+}
+
+.footer-brand h3{
+
+font-size:24px;
+
+margin-top:10px;
+}
+
+
+/* 3 COLUMN LAYOUT */
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:18px;
+
+align-items:start;
+}
+
+
+/* BRAND FULL WIDTH */
+
+.footer-brand{
+grid-column:1/-1;
+}
+
+
+/* TOURS SUPPORT TERMS */
+
+.footer-links{
+
+align-items:flex-start;
+
+text-align:left;
+}
+
+.footer-links h4{
+
+font-size:18px;
+
+margin-bottom:8px;
+}
+
+.footer-links a{
+
+font-size:14px;
+
+line-height:1.6;
+}
+
+
+/* GET IN TOUCH BELOW */
+
+.footer-contact{
+
+grid-column:1/-1;
+
+margin-top:25px;
+
+align-items:center;
+
+text-align:center;
+}
+
+.footer-contact h4{
+
+font-size:22px;
+
+margin-bottom:8px;
+}
+
+.footer-contact p{
+
+font-size:15px;
+}
+
+
+/* BUTTON */
+
+.contact-btn{
+
+margin:auto;
+
+padding:10px 18px;
+
+font-size:14px;
+}
+
+
+/* SOCIALS */
+
+.socials{
+
+justify-content:center;
+
+margin-top:12px;
+}
+
+.social-btn{
+
+width:40px;
+height:40px;
+
+font-size:17px;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+margin-top:28px;
+
+text-align:center;
+
+font-size:13px;
+}
+
+}
+</style>
 
 <!-- ================= FOOTER CSS END ================= -->
 
@@ -1824,4 +1949,3 @@ class="social-btn"
 </footer>
 
 <!-- ================= FOOTER HTML END ================= -->
-     

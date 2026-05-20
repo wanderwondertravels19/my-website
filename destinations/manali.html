@@ -2,248 +2,145 @@
 <html lang="en">
 
 
-    <!-- ================= HEADER ================= -->
+     <!-- ================= HEADER ================= -->
 
-<header class="w-full bg-white shadow-sm sticky top-0 z-50">
+<header class="sticky top-0 z-50 bg-white shadow-sm">
 
-<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-7xl mx-auto px-5">
 
-<div class="h-[95px] flex items-center justify-between">
+<div class="h-[82px] flex justify-between items-center">
 
 
-
-<!-- LOGO (CLICKABLE HOME) -->
-
-<a href="../index.html"
-class="flex items-center">
+<!-- LOGO -->
+<a href="../index.html">
 
 <img
 src="../images/logo-website.webp"
-class="h-[95px] w-auto object-contain"
-alt="Wander & Wonder Travels">
+class="h-[70px] md:h-[85px]">
 
 </a>
 
 
 
-<!-- MENU -->
-
-<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg font-medium">
-
-
-
-<!-- Home -->
+<!-- DESKTOP MENU -->
+<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg">
 
 <a href="../index.html"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Home
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- TOURS -->
 
 <a href="../index.html#tours"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Tours
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- DESTINATIONS -->
 
 <a href="../index.html#destinations"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Destinations
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
-
-
-
-
-<!-- OUR STORY -->
 
 <a href="../index.html#story"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Our Story
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
 
-
-
-
-<!-- CONTACT -->
-
 <a href="../index.html#enquiry-section"
-
-class="
-relative
-hover:text-[#0D8BFF]
-transition">
-
+class="hover:text-[#0D8BFF] transition">
 Contact Us
-
-<span class="
-absolute
-left-0
--bottom-1
-w-0
-h-[2px]
-bg-[#0D8BFF]
-transition-all
-duration-300
-hover:w-full">
-</span>
-
 </a>
 
 </nav>
 
+
+
+<!-- Hamburger -->
+
+<button
+id="menuBtn"
+class="md:hidden text-3xl">
+
+☰
+
+</button>
+
 </div>
 
-</header>
-
-
+</div>
 
 
 
 <!-- MOBILE MENU -->
+<div
+id="mobileMenu"
+
+class="
+fixed
+top-0
+-right-full
+w-[80%]
+h-screen
+bg-white
+shadow-xl
+transition-all
+duration-300
+p-8
+z-50">
 
 <button
-class="md:hidden text-3xl text-[#001845]">
+id="closeMenu"
+class="text-4xl">
 
-<i class="fa-solid fa-bars"></i>
+×
 
 </button>
 
 
+<div class="mt-10 flex flex-col gap-8 text-xl">
+<a href="../index.html">Home</a>
+
+<a href="../index.html#tours">Tours</a>
+
+<a href="../index.html#destinations">
+Destinations
+</a>
+
+<a href="../index.html#story">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section">
+Contact Us
+</a>
 
 </div>
+
 </div>
 
 </header>
 
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a
-  href="https://wa.me/918910042688?text=Hello%20I%20want%20Plan%20my%20Next%20Wonder%20Trip%20Package"
-  class="whatsapp-float"
-  target="_blank"
->
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-    alt="WhatsApp"
-  />
-</a>
+<script>
 
-<style>
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
+const menu =
+document.getElementById("mobileMenu");
 
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-}
+document.getElementById("menuBtn")
+.onclick=()=>{
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-</style>
+menu.style.right="0";
 
-        </div>
+};
 
-      </div>
+document.getElementById("closeMenu")
+.onclick=()=>{
 
-    </div>
+menu.style.right="-100%";
 
-  </div>
+};
 
-</section>
+</script>
+<head>
 
 
 <meta charset="UTF-8">
@@ -999,164 +896,287 @@ Explore Himachal Packages →
 <!-- ================= FOOTER CSS START ================= -->
 <style>
 
+
 .travel-footer{
-  background:#ffffff;
-  padding:70px 8%;
-  border-top:1px solid #e5e7eb;
+background:#fff;
+padding:55px 6%;
+border-top:1px solid #e5e7eb;
 }
 
 .footer-container{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
-  gap:40px;
-  align-items:flex-start;
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
+gap:40px;
+align-items:flex-start;
 }
 
-
-
 /* BRAND */
+
 .footer-brand{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:18px;
+display:flex;
+flex-direction:column;
+gap:16px;
 }
 
 .footer-logo{
-  width:110px;
-  height:auto;
-  object-fit:contain;
+width:110px;
+height:auto;
 }
 
 .footer-brand h3{
-  color:#60a5fa;
-  font-size:28px;
-  line-height:1.3;
-  font-weight:300;
-  margin:0;
+font-size:28px;
+font-weight:300;
+line-height:1.3;
+color:#60a5fa;
+margin:0;
 }
 
-
-
 /* LINKS */
+
 .footer-links,
 .footer-contact{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 
 .footer-links h4,
 .footer-contact h4{
-  color:#60a5fa;
-  font-size:26px;
-  font-weight:500;
-  margin-bottom:10px;
+
+font-size:24px;
+font-weight:500;
+color:#60a5fa;
+margin-bottom:8px;
 }
 
-.footer-links a{
-  text-decoration:none;
-  color:#6b7280;
-  transition:0.3s;
-  width:max-content;
+.footer-links a,
+.footer-contact p{
+
+text-decoration:none;
+color:#6b7280;
+font-size:16px;
 }
 
 .footer-links a:hover{
-  color:#2563eb;
+color:#2563eb;
 }
 
-
-
-/* CONTACT */
-.footer-contact p{
-  color:#6b7280;
-  margin:0;
-}
+/* BUTTON */
 
 .contact-btn{
-  background:#111827;
-  color:#ffffff;
-  text-decoration:none;
-  padding:12px 22px;
-  border-radius:14px;
-  width:max-content;
-  font-weight:600;
-  transition:0.3s;
+
+background:#25D366;
+color:#fff;
+padding:11px 20px;
+border-radius:12px;
+text-decoration:none;
+width:max-content;
+font-weight:600;
 }
 
 .contact-btn:hover{
-  background:#2563eb;
+background:#1ebe5d;
 }
 
+/* SOCIAL */
 
-
-/* SOCIALS */
 .socials{
-  display:flex;
-  gap:14px;
-  margin-top:10px;
+
+display:flex;
+gap:12px;
+margin-top:8px;
 }
 
 .social-btn{
-  width:46px;
-  height:46px;
-  border-radius:50%;
-  background:#f3f4f6;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#374151;
-  text-decoration:none;
-  font-size:20px;
-  transition:0.3s;
+
+width:44px;
+height:44px;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:#f3f4f6;
+
+font-size:18px;
+
+color:#374151;
+
+transition:.3s;
 }
 
 .social-btn:hover{
-  background:#2563eb;
-  color:#ffffff;
-  transform:translateY(-4px);
+
+background:#2563eb;
+color:#fff;
 }
 
+/* COPYRIGHT */
 
-
-/* BOTTOM */
 .footer-bottom{
-  margin-top:50px;
-  border-top:1px solid #e5e7eb;
-  padding-top:20px;
-  color:#6b7280;
-  font-size:15px;
+
+margin-top:40px;
+padding-top:20px;
+
+border-top:1px solid #e5e7eb;
+
+color:#6b7280;
+
+font-size:15px;
 }
 
 
 
-/* MOBILE */
+/* ========= MOBILE FOOTER ========= */
+
 @media(max-width:900px){
 
-  .footer-container{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .footer-brand{
-    align-items:center;
-    text-align:center;
-  }
-
-  .footer-links,
-  .footer-contact{
-    align-items:center;
-    text-align:center;
-  }
-
-  .footer-bottom{
-    text-align:center;
-  }
-
+.travel-footer{
+padding:45px 20px;
 }
 
-</style>
 
+/* LOGO */
+
+.footer-brand{
+
+align-items:center;
+
+text-align:center;
+
+margin-bottom:30px;
+}
+
+.footer-logo{
+width:85px;
+}
+
+.footer-brand h3{
+
+font-size:24px;
+
+margin-top:10px;
+}
+
+
+/* 3 COLUMN LAYOUT */
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:18px;
+
+align-items:start;
+}
+
+
+/* BRAND FULL WIDTH */
+
+.footer-brand{
+grid-column:1/-1;
+}
+
+
+/* TOURS SUPPORT TERMS */
+
+.footer-links{
+
+align-items:flex-start;
+
+text-align:left;
+}
+
+.footer-links h4{
+
+font-size:18px;
+
+margin-bottom:8px;
+}
+
+.footer-links a{
+
+font-size:14px;
+
+line-height:1.6;
+}
+
+
+/* GET IN TOUCH BELOW */
+
+.footer-contact{
+
+grid-column:1/-1;
+
+margin-top:25px;
+
+align-items:center;
+
+text-align:center;
+}
+
+.footer-contact h4{
+
+font-size:22px;
+
+margin-bottom:8px;
+}
+
+.footer-contact p{
+
+font-size:15px;
+}
+
+
+/* BUTTON */
+
+.contact-btn{
+
+margin:auto;
+
+padding:10px 18px;
+
+font-size:14px;
+}
+
+
+/* SOCIALS */
+
+.socials{
+
+justify-content:center;
+
+margin-top:12px;
+}
+
+.social-btn{
+
+width:40px;
+height:40px;
+
+font-size:17px;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+margin-top:28px;
+
+text-align:center;
+
+font-size:13px;
+}
+
+}
+</style>
 
 <!-- ================= FOOTER CSS END ================= -->
 
