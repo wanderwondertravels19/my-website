@@ -1,190 +1,133 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-   <!-- ================= HEADER ================= -->
-
-<header class="sticky top-0 z-50 bg-white shadow-sm">
-
-<div class="max-w-7xl mx-auto px-5">
-
-<div class="h-[82px] flex justify-between items-center">
-
-
-<!-- LOGO -->
-<a href="../index.html">
-
-<img
-src="../images/logo-website.webp"
-class="h-[70px] md:h-[85px]">
-
-</a>
-
-
-
-<!-- DESKTOP MENU -->
-<nav class="hidden md:flex items-center gap-10 text-[#001845] text-lg">
-
-<a href="../index.html"
-class="hover:text-[#0D8BFF] transition">
-Home
-</a>
-
-<a href="../index.html#tours"
-class="hover:text-[#0D8BFF] transition">
-Tours
-</a>
-
-<a href="../index.html#destinations"
-class="hover:text-[#0D8BFF] transition">
-Destinations
-</a>
-
-<a href="../index.html#story"
-class="hover:text-[#0D8BFF] transition">
-Our Story
-</a>
-
-<a href="../index.html#enquiry-section"
-class="hover:text-[#0D8BFF] transition">
-Contact Us
-</a>
-
-</nav>
-
-
-
-<!-- Hamburger -->
-
-<button
-id="menuBtn"
-class="md:hidden text-3xl">
-
-☰
-
-</button>
-
-</div>
-
-</div>
-
-
-
-<!-- MOBILE MENU -->
-<div
-id="mobileMenu"
-
-class="
-fixed
-top-0
--right-full
-w-[80%]
-h-screen
-bg-white
-shadow-xl
-transition-all
-duration-300
-p-8
-z-50">
-
-<button
-id="closeMenu"
-class="text-4xl">
-
-×
-
-</button>
-
-
-<div class="mt-10 flex flex-col gap-8 text-xl">
-<a href="../index.html">Home</a>
-
-<a href="../index.html#tours">Tours</a>
-
-<a href="../index.html#destinations">
-Destinations
-</a>
-
-<a href="../index.html#story">
-Our Story
-</a>
-
-<a href="../index.html#enquiry-section">
-Contact Us
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-
-<script>
-
-const menu =
-document.getElementById("mobileMenu");
-
-document.getElementById("menuBtn")
-.onclick=()=>{
-
-menu.style.right="0";
-
-};
-
-document.getElementById("closeMenu")
-.onclick=()=>{
-
-menu.style.right="-100%";
-
-};
-
-</script>
 <head>
 
+<!-- CHARACTER -->
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
 
+<!-- MOBILE -->
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
 <title>
-Shillong Tourism Guide – Best Places, History, Weather & Travel Tips
+Shillong Tourism Guide 2026 | Best Places to Visit in Meghalaya
 </title>
 
-<meta name="description"
-content="Complete Shillong tourism guide covering history, best places to visit, best time to visit, Police Bazar, Shillong Peak, Ward's Lake, Umiam Lake, Butterfly Museum, food, weather and travel tips.">
+<meta
+name="description"
+content="Complete Shillong tourism guide 2026 covering Umiam Lake, Elephant Falls, Shillong Peak, Police Bazaar, food, weather, waterfalls, Meghalaya travel tips and best places to visit.">
 
-<meta name="keywords"
-content="shillong tourism guide, shillong travel blog, best places in shillong, shillong weather, shillong peak, shillong police bazar">
+<meta
+name="keywords"
+content="Shillong tourism guide, Meghalaya tourism, Shillong travel guide 2026, Shillong trip, Shillong waterfall, Umiam Lake, Shillong Peak, Police Bazaar Shillong, Meghalaya travel blog, Northeast India tourism">
 
+<meta
+name="robots"
+content="index, follow">
 
+<meta
+name="author"
+content="Wander & Wonder Travels">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NJESEKWCN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<link
+rel="canonical"
+href="https://www.wanderandwonder.in/destinations/shillong-tourism-guide.html">
 
-  gtag('config', 'G-9NJESEKWCN');
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="article">
+
+<meta
+property="og:title"
+content="Shillong Tourism Guide 2026 | Meghalaya Travel Guide">
+
+<meta
+property="og:description"
+content="Explore Shillong with waterfalls, lakes, Khasi culture, cafés, scenic viewpoints and Meghalaya travel tips.">
+
+<meta
+property="og:image"
+content="https://www.wanderandwonder.in/images/meghalaya-cover.webp">
+
+<meta
+property="og:url"
+content="https://www.wanderandwonder.in/destinations/shillong-tourism-guide.html">
+
+<meta
+property="og:site_name"
+content="Wander & Wonder Travels">
+
+<!-- TWITTER -->
+<meta
+name="twitter:card"
+content="summary_large_image">
+
+<meta
+name="twitter:title"
+content="Shillong Tourism Guide 2026">
+
+<meta
+name="twitter:description"
+content="Best places to visit in Shillong Meghalaya including Umiam Lake, waterfalls, cafés and travel tips.">
+
+<meta
+name="twitter:image"
+content="https://wanderandwonder.in/images/meghalaya-cover.webp">
+
+<!-- GOOGLE ANALYTICS -->
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=G-9NJESEKWCN">
 </script>
-<!-- GOOGLE ANALYTICS END -->
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-9NJESEKWCN');
+</script>
 
 <!-- MICROSOFT CLARITY -->
+
 <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wu6idxbfzn");
+(function(c,l,a,r,i,t,y){
+
+c[a]=c[a]||function(){
+(c[a].q=c[a].q||[]).push(arguments)
+};
+
+t=l.createElement(r);
+
+t.async=1;
+
+t.src="https://www.clarity.ms/tag/"+i;
+
+y=l.getElementsByTagName(r)[0];
+
+y.parentNode.insertBefore(t,y);
+
+})(window, document, "clarity", "script", "wu6idxbfzn");
 </script>
 
-
+<!-- TAILWIND -->
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+<!-- GOOGLE FONT -->
+
+<link
+href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
+
+<!-- CUSTOM CSS -->
 
 <style>
 
@@ -237,50 +180,33 @@ margin-bottom:18px;
 }
 
 .feature-img{
-
 width:100%;
 height:500px;
-
 object-fit:cover;
-
 border-radius:32px;
-
 margin:40px 0;
 }
 
 .image-grid{
-
 display:grid;
 grid-template-columns:repeat(2,1fr);
-
 gap:18px;
 margin:35px 0;
-
 }
 
 .image-grid img{
-
 height:240px;
 width:100%;
-
 object-fit:cover;
-
 border-radius:22px;
-
 }
 
 .highlight{
-
 background:#f8fafc;
-
 padding:30px;
-
 border-left:5px solid #0D8BFF;
-
 border-radius:16px;
-
 margin:40px 0;
-
 }
 
 @media(max-width:768px){
@@ -293,20 +219,17 @@ h2{
 font-size:34px;
 }
 
-p{
+.blog-container p,
+.blog-container li{
 font-size:18px;
 }
 
 .image-grid{
-
 grid-template-columns:1fr;
-
 }
 
 .feature-img{
-
 height:260px;
-
 }
 
 }
@@ -316,18 +239,166 @@ height:260px;
 </head>
 
 
+     
+
+<!-- ================= HEADER ================= -->
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+
+<div class="max-w-7xl mx-auto px-5">
+
+<div class="h-[82px] flex justify-between items-center">
+
+
+<!-- LOGO -->
+<a href="../index.html">
+
+<img
+src="../images/logo-website.webp"
+class="h-[70px] md:h-[85px]">
+
+</a>
+
+
+
+<!-- DESKTOP MENU -->
+<nav class="hidden md:flex items-center gap-6 text-[#001845] text-lg">
+
+<a href="../index.html"
+class="hover:text-[#0D8BFF] transition">
+Home
+</a>
+
+<a href="../index.html#tours"
+class="hover:text-[#0D8BFF] transition">
+Tours
+</a>
+
+<a href="../group-tours/group-tours.html"
+class="hover:text-[#0D8BFF] transition">
+Group Tours
+</a>
+
+<a href="../index.html#destinations"
+class="hover:text-[#0D8BFF] transition">
+Destinations
+</a>
+
+<a href="../index.html#story"
+class="hover:text-[#0D8BFF] transition">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section"
+class="hover:text-[#0D8BFF] transition">
+Contact Us
+</a>
+
+</nav>
+
+
+
+<!-- Hamburger -->
+
+<button
+id="menuBtn"
+class="md:hidden text-3xl">
+
+☰
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- MOBILE MENU -->
+<div
+id="mobileMenu"
+
+class="
+fixed
+top-0
+-right-[-100%]
+w-[80%]
+h-screen
+bg-white
+shadow-xl
+transition-all
+duration-300
+p-8
+z-50">
+
+<button
+id="closeMenu"
+class="text-4xl">
+
+×
+
+</button>
+
+
+<div class="mt-10 flex flex-col gap-8 text-xl">
+<a href="../index.html">Home</a>
+
+<a href="../index.html#tours">Tours</a>
+
+<a href="../group-tours/group-tours.html">Group Tours</a>
+
+<a href="../index.html#destinations">
+Destinations
+</a>
+
+<a href="../index.html#story">
+Our Story
+</a>
+
+<a href="../index.html#enquiry-section">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<script>
+
+const menu =
+document.getElementById("mobileMenu");
+
+document.getElementById("menuBtn")
+.onclick=()=>{
+
+menu.style.right="0";
+
+};
+
+document.getElementById("closeMenu")
+.onclick=()=>{
+
+menu.style.right="-100%";
+
+};
+
+</script>
+
+
+
+
 <body>
 
 
 <div class="blog-container">
-
+<!-- BLOG -->
 
 <!-- HERO IMAGE -->
 
-<img
-src="../images/meghalaya-cover.webp"
-class="feature-img">
-
+<img src="../images/meghalaya-cover.webp" alt="Cherry Blossom Ward's Lake Shillong" loading="lazy" class="feature-img">
 
 
 <!-- TITLE -->
@@ -393,13 +464,13 @@ Shillong is famous for::
 
 <div class="image-grid">
 
-<img src="../images/shillong-peak-viewpoint.webp">
+<img src="../images/shillong-peak-viewpoint.webp"alt="View of Shillong City from Shillong Peak" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
-<img src="../images/elephant-falls-shillong.webp">
+<img src="../images/elephant-falls-shillong.webp"alt="Shillong famous Elephants Lake" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
-<img src="../images/butterfly-museum-shillong.webp">
+<img src="../images/butterfly-museum-shillong.webp"alt="Butterfly Museum shillong" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
-<img src="../images/police-bazar-shillong.webp">
+<img src="../images/police-bazar-shillong.webp"alt="Shillong Police Bazar Handicraft Market" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
 
 </div>
@@ -459,9 +530,9 @@ Popular activities include:
 
 <div class="image-grid">
 
-<img src="../images/umiam-lake-meghalaya-2.webp">
+<img src="../images/umiam-lake-meghalaya-2.webp"alt="Umiam Lake View Point" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
-<img src="..//images/umiam-lake-meghalaya.webp">
+<img src="..//images/umiam-lake-meghalaya.webp"alt="Umiam Lake View Point" loading="lazy" class="rounded-[22px] w-full h-[240px] object-cover">
 
 
 </div>
@@ -880,6 +951,7 @@ Explore Shillong Packages →
 
 
 
+
 <!-- ================= FOOTER CSS START ================= -->
 <style>
 
@@ -1216,7 +1288,12 @@ Destinations
 
 </a>
       
-      <a href="#">Travel Blogs</a>
+      <a href="../blogs/travel-blogs.html"
+class="hover:text-[#0D8BFF] transition">
+
+Travel Blogs
+
+</a>
 
     </div>
 
