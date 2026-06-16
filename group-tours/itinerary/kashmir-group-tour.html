@@ -288,6 +288,20 @@ menu.style.right="-100%";
 
 
 
+<!-- Contact Bar -->
+
+<div class="w-full bg-white/90 backdrop-blur-md border-b border-gray-200 py-2 text-center text-sm md:text-base text-gray-700">
+
+    ✨ Speak with a Travel Expert:
+    
+    <a href="tel:+918910042688"
+       class="font-semibold text-[#0D8BFF] hover:underline">
+       8910042688
+    </a>
+
+</div>
+
+
 
 <!-- HERO PACKAGE -->
 <section class="py-8 md:py-20 bg-[#eef3f7]">
@@ -497,41 +511,98 @@ Contact Us
 
 
 <!-- FLOATING WHATSAPP BUTTON -->
-<a
-  href="https://wa.me/918910042688?text=Hello%20I%20want%20Plan%20my%20Next%20Wonder%20Trip%20Package"
-  class="whatsapp-float"
-  target="_blank"
->
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-    alt="WhatsApp"
-  />
-</a>
+<div class="whatsapp-wrapper">
+
+    <div class="whatsapp-label">
+        ✨ Connect with a Travel Expert
+    </div>
+
+    <a
+        href="https://wa.me/918910042688?text=Hello%20I%20want%20to%20plan%20my%20next%20trip"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
+
+
+
 
 <style>
+.whatsapp-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glowing Label */
+
+.whatsapp-label {
+    background: linear-gradient(135deg, #25D366, #1ebc57);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    box-shadow:
+        0 0 10px rgba(37, 211, 102, 0.7),
+        0 0 20px rgba(37, 211, 102, 0.5),
+        0 0 30px rgba(37, 211, 102, 0.3);
+    animation: glowPulse 2s infinite;
+}
+
+/* WhatsApp Button */
+
 .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-  z-index: 1000;
-  transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 32px;
+    box-shadow:
+        0 0 15px rgba(37, 211, 102, 0.8),
+        0 0 30px rgba(37, 211, 102, 0.5);
+    animation: whatsappPulse 2s infinite;
 }
 
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
+@keyframes glowPulse {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
+@keyframes whatsappPulse {
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 </style>
 
@@ -1558,6 +1629,8 @@ Submit Enquiry →
 
 </section>
 
+</body>
+</html>
 
 
 
