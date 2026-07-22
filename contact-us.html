@@ -761,6 +761,74 @@ Submit Enquiry →
 
 </section>
 
+<!-- ================= WHATSAPP SCRIPT ================= -->
+
+<script>
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+
+let name =
+document.getElementById("name").value;
+
+let email =
+document.getElementById("email").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let date =
+document.getElementById("journeyDate").value;
+
+let duration =
+document.getElementById("duration").value;
+
+let message =
+document.getElementById("message").value;
+
+
+
+let text =
+
+`NEW TOUR ENQUIRY
+
+👤 Name:
+${name}
+
+📧 Email:
+${email}
+
+📱 Phone:
+${phone}
+
+📅 Journey Date:
+${date}
+
+⏳ Duration:
+${duration}
+
+📝 Message:
+${message}`;
+
+
+
+let url =
+
+`https://wa.me/918910042688?text=${encodeURIComponent(text)}`;
+
+
+window.open(
+url,
+'_blank'
+);
+
+}
+
+</script>
+
+
                 <div class="bg-white rounded-3xl shadow-2xl p-10 text-center border border-gray-100">
 
     <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
