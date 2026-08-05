@@ -1538,323 +1538,456 @@ md:leading-8">
 </section>
 
 
-<!-- ================= ENQUIRY SECTION ================= -->
+<!-- =========================
+     ENQUIRY SECTION
+========================= -->
+
+<section class="
+    py-14
+    md:py-24
+    bg-[#001845]
+    text-white
+">
+
+    <!-- MAIN TWO-COLUMN CONTAINER -->
+
+    <div class="
+        max-w-7xl
+        mx-auto
+        px-5
+        md:px-8
+        grid
+        lg:grid-cols-2
+        gap-8
+        md:gap-12
+        items-center
+    ">
+
+
+        <!-- =========================
+             LEFT IMAGE
+        ========================= -->
+
+        <div>
+
+            <img
+                src="../../images/kashmir-durga-puja-special-group-tour.webp"
+                alt="Kashmir Durga Puja Special Group Tour"
+                class="
+                    w-full
+                    h-[240px]
+                    md:h-[620px]
+                    object-cover
+                    rounded-[25px]
+                    md:rounded-[35px]
+                    shadow-2xl
+                "
+            >
+
+        </div>
+
+
+
+        <!-- =========================
+             RIGHT FORM
+        ========================= -->
+
+        <div class="w-full">
+
+            <h2 class="
+                text-3xl
+                md:text-5xl
+                font-bold
+                mb-3
+                md:mb-4
+            ">
+                Plan Your Next Journey
+            </h2>
+
+
+            <p class="
+                text-white/70
+                mb-6
+                md:mb-10
+                text-sm
+                md:text-base
+            ">
+                Tell us your travel requirements and receive personalised assistance.
+            </p>
+
+
+            <!-- FORM -->
+
+            <form
+                id="travelEnquiryForm"
+                class="
+                    grid
+                    md:grid-cols-2
+                    gap-4
+                    md:gap-5
+                "
+            >
+
+
+                <!-- NAME -->
+
+                <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="Full Name"
+                    autocomplete="name"
+                    class="
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        px-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                        placeholder:text-white/60
+                    "
+                >
+
+
+                <!-- EMAIL -->
+
+                <input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="Email Address"
+                    autocomplete="email"
+                    class="
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        px-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                        placeholder:text-white/60
+                    "
+                >
+
+
+                <!-- PHONE -->
+
+                <input
+                    id="phone"
+                    type="tel"
+                    required
+                    maxlength="10"
+                    minlength="10"
+                    inputmode="numeric"
+                    pattern="[6-9][0-9]{9}"
+                    placeholder="Phone Number"
+                    autocomplete="tel"
+                    class="
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        px-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                        placeholder:text-white/60
+                    "
+                >
+
+
+                <!-- JOURNEY DATE -->
+
+                <input
+                    id="journeyDate"
+                    type="date"
+                    required
+                    class="
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        px-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                    "
+                >
+
+
+                <!-- DURATION -->
+
+                <input
+                    id="duration"
+                    type="text"
+                    required
+                    placeholder="Duration (Ex: 5N / 6D)"
+                    class="
+                        md:col-span-2
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        px-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                        placeholder:text-white/60
+                    "
+                >
+
+
+                <!-- MESSAGE -->
+
+                <textarea
+                    id="message"
+                    required
+                    placeholder="Tell us about your travel plan..."
+                    class="
+                        md:col-span-2
+                        h-24
+                        md:h-36
+                        rounded-xl
+                        md:rounded-2xl
+                        p-4
+                        bg-white/10
+                        border
+                        border-white/20
+                        outline-none
+                        text-white
+                        placeholder:text-white/60
+                        resize-none
+                    "
+                ></textarea>
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button
+                    id="submitButton"
+                    type="submit"
+                    class="
+                        md:col-span-2
+                        h-12
+                        md:h-14
+                        rounded-xl
+                        md:rounded-2xl
+                        bg-[#0D8BFF]
+                        hover:bg-[#0077e6]
+                        transition
+                        font-semibold
+                        text-base
+                        md:text-lg
+                    "
+                >
+                    Submit Enquiry →
+                </button>
+
+            </form>
+
+
+
+            <!-- =========================
+                 THANK YOU MESSAGE
+            ========================= -->
+
+            <div
+                id="thankYouMessage"
+                class="
+                    hidden
+                    mt-6
+                    rounded-2xl
+                    bg-white/10
+                    border
+                    border-white/20
+                    p-6
+                    text-center
+                "
+            >
+
+                <div class="text-4xl mb-3">
+                    🎉
+                </div>
+
+                <h3 class="
+                    text-xl
+                    md:text-2xl
+                    font-bold
+                    mb-2
+                ">
+                    Thank You!
+                </h3>
+
+                <p class="
+                    text-white/70
+                    text-sm
+                    md:text-base
+                ">
+                    Your enquiry has been sent successfully.
+                    Our travel expert will contact you shortly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHATSAPP SCRIPT
+========================= -->
 
-<section
-id="enquiry-section"
+<script>
+
+document
+.getElementById("travelEnquiryForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
 
-class="
-py-14
-md:py-24
 
-bg-[#001845]
+    /* GET FORM VALUES */
 
-text-white">
+    const name =
+        document.getElementById("name").value.trim();
 
-<div class="max-w-7xl mx-auto px-5 md:px-6">
+    const email =
+        document.getElementById("email").value.trim();
 
-<div class="
-grid
+    const phone =
+        document.getElementById("phone").value.trim();
 
-lg:grid-cols-2
+    const journeyDate =
+        document.getElementById("journeyDate").value;
 
-gap-8
-md:gap-12
+    const duration =
+        document.getElementById("duration").value.trim();
 
-items-center">
+    const message =
+        document.getElementById("message").value.trim();
 
 
 
-<!-- LEFT IMAGE -->
+    /* PHONE VALIDATION */
 
-<div>
+    if (!/^[6-9][0-9]{9}$/.test(phone)) {
 
-<img
-src="../../images/kashmir-durga-puja-special-group-tour.webp"
+        alert(
+            "Please enter a valid 10-digit Indian mobile number."
+        );
 
-class="
-w-full
+        return;
 
-h-[240px]
-md:h-[620px]
+    }
 
-object-cover
 
-rounded-[25px]
-md:rounded-[35px]
 
-shadow-2xl">
+    /* FORMAT DATE */
 
-</div>
+    let formattedDate = "";
 
+    if (journeyDate) {
 
+        const date =
+            new Date(journeyDate + "T00:00:00");
 
+        formattedDate =
+            String(date.getDate()).padStart(2, "0") +
+            "/" +
+            String(date.getMonth() + 1).padStart(2, "0") +
+            "/" +
+            date.getFullYear();
 
+    }
 
-<!-- RIGHT FORM -->
 
-<div>
 
-<h2 class="
-text-3xl md:text-5xl
+    /* WHATSAPP MESSAGE */
 
-font-bold
+    const whatsappMessage =
 
-mb-3
-md:mb-4">
+`🌍 *NEW TRAVEL ENQUIRY*
 
-Plan Your Next Journey
+👤 *Full Name:* ${name}
 
-</h2>
+📧 *Email:* ${email}
 
+📱 *Phone:* ${phone}
 
-<p class="
-text-white/70
+📅 *Journey Date:* ${formattedDate}
 
-mb-6
-md:mb-10
+⏳ *Duration:* ${duration}
 
-text-sm
-md:text-base">
+📝 *Travel Requirements:*
+${message}
 
-Tell us your travel requirements and receive personalised assistance.
+━━━━━━━━━━━━━━━━━━
+*Wander and Wonder Travels*
+Website Enquiry`;
 
-</p>
 
 
+    /* YOUR WHATSAPP NUMBER */
 
+    const whatsappNumber =
+        "918910042688";
 
 
-<form
-onsubmit="sendWhatsApp(event)"
 
-class="
-grid
+    /* WHATSAPP URL */
 
-md:grid-cols-2
+    const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(whatsappMessage);
 
-gap-4
-md:gap-5">
 
 
+    /* OPEN WHATSAPP */
 
-<!-- NAME -->
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
 
-<input
-id="name"
-type="text"
-required
-placeholder="Full Name"
 
-class="
-h-12
-md:h-14
 
-rounded-xl
-md:rounded-2xl
+    /* HIDE FORM */
 
-px-4
+    document
+        .getElementById("travelEnquiryForm")
+        .classList.add("hidden");
 
-bg-white/10
-border border-white/20
 
-outline-none
 
-text-white
+    /* SHOW THANK YOU */
 
-placeholder:text-white/60">
+    document
+        .getElementById("thankYouMessage")
+        .classList.remove("hidden");
 
+});
 
+</script>
 
-
-
-<!-- EMAIL -->
-
-<input
-id="email"
-type="email"
-required
-placeholder="Email Address"
-
-class="
-h-12
-md:h-14
-
-rounded-xl
-md:rounded-2xl
-
-px-4
-
-bg-white/10
-border border-white/20
-
-outline-none
-
-text-white
-
-placeholder:text-white/60">
-
-
-
-
-
-<!-- PHONE -->
-
-<input
-id="phone"
-type="tel"
-required
-maxlength="10"
-placeholder="Phone Number"
-
-class="
-h-12
-md:h-14
-
-rounded-xl
-md:rounded-2xl
-
-px-4
-
-bg-white/10
-border border-white/20
-
-outline-none
-
-text-white
-
-placeholder:text-white/60">
-
-
-
-
-
-<!-- DATE -->
-
-<input
-id="journeyDate"
-type="date"
-required
-
-class="
-h-12
-md:h-14
-
-rounded-xl
-md:rounded-2xl
-
-px-4
-
-bg-white/10
-border border-white/20
-
-outline-none
-
-text-white">
-
-
-
-
-
-<!-- DURATION -->
-
-<input
-id="duration"
-type="text"
-required
-placeholder="Duration (Ex: 5N / 6D)"
-
-class="
-md:col-span-2
-
-h-12
-md:h-14
-
-rounded-xl
-md:rounded-2xl
-
-px-4
-
-bg-white/10
-border border-white/20
-
-outline-none
-
-text-white
-
-placeholder:text-white/60">
-
-
-
-
-
-<!-- MESSAGE -->
-
-<textarea
-id="message"
-required
-placeholder="Tell us about your travel plan..."
-
-class="
-md:col-span-2
-
-h-24
-md:h-36
-
-rounded-xl
-md:rounded-2xl
-
-p-4
-
-bg-white/10
-border border-white/20
-
-outline-none
-
-text-white
-
-placeholder:text-white/60
-
-resize-none">
-
-</textarea>
-
-
-
-
-
-
-<!-- BUTTON -->
-
-<button
-type="submit"
-
-class="
-md:col-span-2
-
-h-12
-md:h-14
-
-rounded-xl
-md:rounded-2xl
-
-bg-[#0D8BFF]
-
-hover:bg-[#0077e6]
-
-transition
-
-font-semibold
-
-text-base
-md:text-lg">
-
-Submit Enquiry →
-
-</button>
-
-
-</form>
 
 </div>
 
